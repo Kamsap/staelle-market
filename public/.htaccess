@@ -3,6 +3,10 @@ Options -Indexes
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # L'ancienne adresse reste valable, mais renvoie vers le nouveau nom public.
+  RewriteCond %{HTTP_HOST} ^staelle\.wesolve-digital\.fr$ [NC]
+  RewriteRule ^ https://staelle-shop-deal.wesolve-digital.fr%{REQUEST_URI} [L,R=301,NE]
+
   # En production, toutes les pages utilisent le certificat Let's Encrypt.
   # La redirection conserve le domaine, le chemin et les paramètres demandés.
   RewriteCond %{HTTPS} !=on
