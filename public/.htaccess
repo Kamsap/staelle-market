@@ -3,6 +3,11 @@ Options -Indexes
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # En production, toutes les pages utilisent le certificat Let's Encrypt.
+  # La redirection conserve le domaine, le chemin et les paramètres demandés.
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
   # Si l'API Python est montée sous /api sur le même domaine, on ne réécrit pas
   # ces URLs vers index.html.
   RewriteRule ^api($|/) - [L]

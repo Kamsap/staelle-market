@@ -35,9 +35,13 @@ Dans cPanel > **Setup Python App** :
 5. définir :
 
 ```txt
-Application startup file : passenger_wsgi.py
+Application startup file : staelle_wsgi.py
 Application entry point : application
 ```
+
+Le nom `staelle_wsgi.py` est important : cPanel génère lui-même un fichier
+`passenger_wsgi.py`. Utiliser ce nom comme fichier de démarrage provoquerait un
+chargement récursif et empêcherait Passenger de lancer l'application.
 
 Ensuite, depuis Terminal/SSH, entrer dans l’environnement Python donné par cPanel, puis :
 

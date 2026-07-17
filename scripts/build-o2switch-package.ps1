@@ -25,7 +25,7 @@ Copy-Item (Join-Path $projectRoot "public\.htaccess") (Join-Path $frontendPackag
 
 Copy-Item (Join-Path $projectRoot "backend\app") $backendPackage -Recurse -Force
 Copy-Item (Join-Path $projectRoot "backend\requirements.txt") $backendPackage -Force
-Copy-Item (Join-Path $projectRoot "backend\passenger_wsgi.py") $backendPackage -Force
+Copy-Item (Join-Path $projectRoot "backend\staelle_wsgi.py") $backendPackage -Force
 Copy-Item (Join-Path $projectRoot "backend\.env.example") $backendPackage -Force
 
 Get-ChildItem $backendPackage -Directory -Recurse -Filter "__pycache__" |

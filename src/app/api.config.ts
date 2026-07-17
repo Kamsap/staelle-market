@@ -4,12 +4,15 @@ export interface ApiConfig {
   productsPath: string;
 }
 
-// URL relative volontaire :
-// - en local, Angular redirige /api vers FastAPI via proxy.conf.json ;
-// - en Docker, Nginx redirige /api vers le conteneur backend ;
-// - en production, on garde le même code si le domaine sert le front et l'API.
+// L'API de production vit sur un sous-domaine isolé. En local et avec Docker,
+// l'URL relative continue de passer par le proxy déjà configuré.
+const baseUrl =
+  window.location.hostname === "staelle.wesolve-digital.fr"
+    ? "https://api.staelle.wesolve-digital.fr/api/v1"
+    : "/api/v1";
+
 export const API_CONFIG: ApiConfig = {
   catalogEnabled: false,
-  baseUrl: "/api/v1",
+  baseUrl,
   productsPath: "/products",
 };
