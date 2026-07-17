@@ -12,7 +12,8 @@
     [href]="whatsappLink()"
     target="_blank"
     rel="noopener"
-    >WhatsApp <span aria-hidden="true">↗</span></a
+    >WhatsApp
+    <img class="whatsapp-icon" src="/images/whatsapp.svg" alt="" /></a
   >
 </header>
 <main id="top">
@@ -45,7 +46,7 @@
         alt="Sac à dos Nike Heritage vert"
       />
       <div class="hero-product">
-        <span>Nike Heritage</span><strong>{{ formatPrice(27500) }}</strong>
+        <span>Nike Heritage</span><strong>{{ formatPrice(heroPrice) }}</strong>
       </div>
     </div>
   </section>
@@ -228,7 +229,8 @@
       [href]="whatsappLink()"
       target="_blank"
       rel="noopener"
-      >Écrire sur WhatsApp <span>↗</span></a
+      >Écrire sur WhatsApp
+      <img class="whatsapp-icon" src="/images/whatsapp.svg" alt="" /></a
     >
   </section>
 </main>
@@ -302,7 +304,7 @@
           {{
             gallery.stock > 0 ? "Commander sur WhatsApp" : "Bientôt disponible"
           }}
-          <span>↗</span>
+          <img class="whatsapp-icon" src="/images/whatsapp.svg" alt="" />
         </button>
       </aside>
     </section>

@@ -20,6 +20,13 @@ export interface Product {
 
 type ProductSeed = Omit<Product, 'description' | 'image' | 'images'> & { image?: string; images?: string[] };
 
+// Les montants saisis plus bas restent les prix de base du catalogue.
+// Modifier cette valeur suffit pour ajuster tous les prix affichés et commandés.
+export const PRICE_INCREASE_PERCENT = 15;
+
+const priceWithIncrease = (basePrice: number): number =>
+  Math.round(basePrice * (1 + PRICE_INCREASE_PERCENT / 100));
+
 const imageFor = (product: ProductSeed): string => {
   if (product.category === 'Chaussure') return '/images/product-shoe.svg';
   if (product.category === 'Vêtement') return '/images/product-shirt.svg';
@@ -31,6 +38,7 @@ const product = (seed: ProductSeed): Product => {
   const image = seed.image ?? PRODUCT_IMAGE_SOURCES[seed.id]?.path ?? imageFor(seed);
   return {
     ...seed,
+    price: priceWithIncrease(seed.price),
     description: `${seed.name}${seed.color ? ` en ${seed.color.toLowerCase()}` : ''}. Sélection authentique ${seed.brand}.`,
     image,
     images: seed.images ?? PRODUCT_IMAGE_SOURCES[seed.id]?.paths ?? [image]

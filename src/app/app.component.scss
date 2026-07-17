@@ -51,6 +51,9 @@ nav a:hover::after {
 }
 .header-action {
   justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
   border-bottom: 1px solid var(--ink);
   padding-bottom: 3px;
