@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title">
+  <title id="title">Chaussure de sport</title>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#faf9f5"/><stop offset="1" stop-color="#d8d4ca"/></linearGradient></defs>
+  <rect width="800" height="620" fill="#e7e4da"/>
+  <path d="M174 355c57-20 99-77 121-152 4-15 19-24 33-18l144 58c22 9 40 25 51 46l29 51c13 23 33 42 57 53l48 22c30 14 39 52 18 77-16 19-41 30-66 30H206c-55 0-95-51-83-104 6-29 24-53 51-63Z" fill="url(#g)" stroke="#11120f" stroke-width="10"/>
+  <path d="M286 264c77 38 138 56 218 65M264 310c79 39 151 58 265 71" fill="none" stroke="#11120f" stroke-width="14" stroke-linecap="round"/>
+  <path d="m352 226-37 126m91-103-39 126m91-104-35 121" stroke="#c9ff3d" stroke-width="20" stroke-linecap="round"/>
+  <path d="M142 448h538" stroke="#11120f" stroke-width="14" stroke-linecap="round"/>
+</svg>

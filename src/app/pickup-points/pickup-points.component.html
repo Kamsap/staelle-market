@@ -1,0 +1,39 @@
+<section class="pickup" id="retrait" aria-labelledby="pickup-title">
+  <header class="pickup-heading">
+    <div>
+      <p class="pickup-eyebrow">Retrait à Yaoundé</p>
+      <h2 id="pickup-title">Trois points.<br /><em>Un retrait simple.</em></h2>
+    </div>
+    <p>
+      Choisis le lieu le plus proche, confirme ta commande puis récupère-la au
+      point convenu.
+    </p>
+  </header>
+
+  <div class="pickup-list">
+    @for (point of points; track point.id; let index = $index) {
+      <article class="pickup-point">
+        <div class="map-frame">
+          <iframe
+            [src]="point.mapEmbedUrl"
+            [title]="'Carte Google Maps — ' + point.name"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          >
+          </iframe>
+          <span>{{ (index + 1).toString().padStart(2, "0") }}</span>
+        </div>
+        <div class="pickup-copy">
+          <p>{{ point.area }}</p>
+          <h3>{{ point.name }}</h3>
+          <address>{{ point.address }}</address>
+          <small>{{ point.note }}</small>
+          <a [href]="point.directionsUrl" target="_blank" rel="noopener">
+            Ouvrir l’itinéraire <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+    }
+  </div>
+</section>

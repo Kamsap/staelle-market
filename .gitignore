@@ -11,6 +11,23 @@ dist/
 .idea/
 *.log
 
+# Backend Python et base locale
+backend/.venv/
+backend/.env
+backend/*.db
+backend/test_*.db
+backend/**/__pycache__/
+.pytest_cache/
+
+# Secrets locaux Docker : garder le README, jamais les valeurs.
+.env.docker
+secrets/*
+!secrets/.gitkeep
+!secrets/README.md
+
+# Packages générés pour l'hébergement.
+deploy/
+
 # OS files
 .DS_Store
 Thumbs.db

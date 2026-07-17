@@ -1,0 +1,100 @@
+<section class="reviews" id="avis" aria-labelledby="reviews-title">
+  <div class="reviews-intro">
+    <p class="reviews-eyebrow">Ton expérience</p>
+    <h2 id="reviews-title">Un avis peut<br /><em>faire la différence.</em></h2>
+    <p>
+      Partage ton retour avec nous. Après validation, WhatsApp s’ouvrira avec
+      ton message prêt à être envoyé.
+    </p>
+  </div>
+
+  <form #reviewForm="ngForm" (ngSubmit)="sendReview(reviewForm)" novalidate>
+    <div class="field-row">
+      <label>
+        <span>Nom complet</span>
+        <input
+          type="text"
+          name="name"
+          [(ngModel)]="review.name"
+          #nameControl="ngModel"
+          required
+          maxlength="80"
+          autocomplete="name"
+          placeholder="Ton nom"
+        />
+        @if (nameControl.invalid && nameControl.touched) {
+          <small class="field-error">Indique ton nom.</small>
+        }
+      </label>
+
+      <label>
+        <span>Numéro de téléphone</span>
+        <input
+          type="tel"
+          name="phone"
+          [(ngModel)]="review.phone"
+          #phoneControl="ngModel"
+          required
+          minlength="8"
+          maxlength="20"
+          autocomplete="tel"
+          placeholder="Ex. 6 90 00 00 00"
+        />
+        @if (phoneControl.invalid && phoneControl.touched) {
+          <small class="field-error">Saisis un numéro valide.</small>
+        }
+      </label>
+    </div>
+
+    <label>
+      <span>Adresse e-mail</span>
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="review.email"
+        #emailControl="ngModel"
+        required
+        email
+        maxlength="120"
+        autocomplete="email"
+        placeholder="ton@email.com"
+      />
+      @if (emailControl.invalid && emailControl.touched) {
+        <small class="field-error">Saisis une adresse e-mail valide.</small>
+      }
+    </label>
+
+    <label>
+      <span>Ton avis</span>
+      <textarea
+        name="message"
+        [(ngModel)]="review.message"
+        #messageControl="ngModel"
+        required
+        minlength="10"
+        maxlength="600"
+        rows="6"
+        placeholder="Raconte-nous ton expérience…"
+      ></textarea>
+      <span class="field-meta">
+        @if (messageControl.invalid && messageControl.touched) {
+          <small class="field-error">Écris au moins 10 caractères.</small>
+        } @else {
+          <small>Minimum 10 caractères</small>
+        }
+        <small>{{ messageLength }} / 600</small>
+      </span>
+    </label>
+
+    <p class="privacy-note">
+      Tes coordonnées servent uniquement à identifier ton avis. Elles seront
+      transmises dans ton message WhatsApp.
+    </p>
+
+    <button type="submit">
+      Préparer mon avis sur WhatsApp <span aria-hidden="true">↗</span>
+    </button>
+
+    <p class="form-feedback" aria-live="polite">{{ feedbackMessage() }}</p>
+  </form>
+</section>

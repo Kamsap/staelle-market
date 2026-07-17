@@ -1,0 +1,134 @@
+<section class="account" id="compte" aria-labelledby="account-title">
+  <div class="account-intro">
+    <p class="account-eyebrow">Compte & fidélité</p>
+    <h2 id="account-title">
+      Commande libre.<br /><em>Avantages au choix.</em>
+    </h2>
+    <p>
+      Un compte permet de rattacher tes commandes et de recevoir 1 point par
+      tranche de 1 000 FCFA après confirmation.
+    </p>
+  </div>
+
+  <div class="account-panel">
+    @if (auth.customer(); as customer) {
+      <div class="profile">
+        <p>Bonjour, {{ customer.full_name }}</p>
+        <strong>{{ customer.points }}</strong>
+        <span>point{{ customer.points > 1 ? "s" : "" }} fidélité</span>
+        <small>{{ customer.email }}</small>
+        <p class="profile-note">
+          Tes prochaines commandes seront automatiquement liées à ce compte.
+        </p>
+        <button type="button" class="secondary-action" (click)="logout()">
+          Se déconnecter
+        </button>
+      </div>
+    } @else if (mode() === "choice") {
+      <div class="choice">
+        <p class="panel-index">01 — Choisir</p>
+        <h3>Comment souhaites-tu continuer ?</h3>
+        <button type="button" class="primary-action" (click)="show('register')">
+          Créer un compte <span>→</span>
+        </button>
+        <button type="button" class="secondary-action" (click)="show('login')">
+          J’ai déjà un compte
+        </button>
+        <button type="button" class="guest-action" (click)="chooseGuest()">
+          Continuer en invité
+        </button>
+        <p class="panel-feedback" aria-live="polite">{{ guestMessage() }}</p>
+      </div>
+    } @else if (mode() === "login") {
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" novalidate>
+        <button type="button" class="back" (click)="show('choice')">
+          ← Retour
+        </button>
+        <h3>Se connecter</h3>
+        <label
+          ><span>E-mail</span
+          ><input
+            type="email"
+            name="loginEmail"
+            [(ngModel)]="loginData.email"
+            required
+            email
+            autocomplete="email"
+        /></label>
+        <label
+          ><span>Mot de passe</span
+          ><input
+            type="password"
+            name="loginPassword"
+            [(ngModel)]="loginData.password"
+            required
+            minlength="8"
+            autocomplete="current-password"
+        /></label>
+        <button class="primary-action" type="submit" [disabled]="loading()">
+          {{ loading() ? "Connexion…" : "Se connecter" }} <span>→</span>
+        </button>
+        <p class="panel-error" aria-live="polite">{{ errorMessage() }}</p>
+      </form>
+    } @else {
+      <form
+        #registerForm="ngForm"
+        (ngSubmit)="register(registerForm)"
+        novalidate
+      >
+        <button type="button" class="back" (click)="show('choice')">
+          ← Retour
+        </button>
+        <h3>Créer mon compte</h3>
+        <label
+          ><span>Nom complet</span
+          ><input
+            type="text"
+            name="fullName"
+            [(ngModel)]="registerData.full_name"
+            required
+            minlength="2"
+            maxlength="100"
+            autocomplete="name"
+        /></label>
+        <label
+          ><span>Téléphone</span
+          ><input
+            type="tel"
+            name="phone"
+            [(ngModel)]="registerData.phone"
+            required
+            minlength="8"
+            maxlength="30"
+            autocomplete="tel"
+        /></label>
+        <label
+          ><span>E-mail</span
+          ><input
+            type="email"
+            name="email"
+            [(ngModel)]="registerData.email"
+            required
+            email
+            autocomplete="email"
+        /></label>
+        <label
+          ><span>Mot de passe</span
+          ><input
+            type="password"
+            name="password"
+            [(ngModel)]="registerData.password"
+            required
+            minlength="8"
+            maxlength="128"
+            autocomplete="new-password"
+          /><small>8 caractères minimum</small></label
+        >
+        <button class="primary-action" type="submit" [disabled]="loading()">
+          {{ loading() ? "Création…" : "Créer mon compte" }} <span>→</span>
+        </button>
+        <p class="panel-error" aria-live="polite">{{ errorMessage() }}</p>
+      </form>
+    }
+  </div>
+</section>

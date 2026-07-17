@@ -1,2 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-:root{--ink:#11120f;--paper:#f2f0e9;--soft:#e7e4da;--lime:#c9ff3d;--muted:#6b6c65;--line:rgba(17,18,15,.18);--danger:#b83e32;--success:#317245}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}button,input,select{font:inherit}a{color:inherit}::selection{background:var(--lime);color:var(--ink)}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+:root {
+  --ink: #11120f;
+  --paper: #f2f0e9;
+  --soft: #e7e4da;
+  --lime: #c9ff3d;
+  --muted: #6b6c65;
+  --line: rgba(17, 18, 15, 0.18);
+  --danger: #b83e32;
+  --success: #317245;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+a {
+  color: inherit;
+}
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
