@@ -44,7 +44,11 @@
     </section>
   </main>
 } @else {
-  <div class="admin-shell">
+  <div
+    class="admin-shell"
+    [attr.aria-hidden]="draft() ? 'true' : null"
+    [attr.inert]="draft() ? '' : null"
+  >
     <aside class="sidebar">
       <a class="admin-brand" href="/">
         <img src="/images/logo.svg" alt="" />
@@ -52,7 +56,7 @@
       </a>
       <nav aria-label="Administration">
         <a class="active" href="#catalogue"><span>01</span> Catalogue</a>
-        <a href="#stock"><span>02</span> Stock</a>
+        <a href="#stock-overview"><span>02</span> Stock</a>
         <span class="future"><b>03</b> Commandes · bientôt</span>
         <span class="future"><b>04</b> Clients · bientôt</span>
       </nav>
@@ -75,7 +79,7 @@
       </header>
 
       @if (dashboard(); as stats) {
-        <section class="metrics" aria-label="Indicateurs du catalogue">
+        <section class="metrics" id="stock-overview" aria-label="Indicateurs du catalogue">
           <div><span>Articles actifs</span><strong>{{ stats.active_products }}</strong></div>
           <div><span>Unités disponibles</span><strong>{{ stats.total_available_stock }}</strong></div>
           <div [class.alert]="stats.low_stock_variants > 0">
@@ -110,12 +114,17 @@
           </label>
         </div>
 
-        <div class="product-table" role="table" aria-label="Liste des articles">
-          <div class="table-row table-head" role="row">
+        <div class="product-table" aria-label="Liste des articles">
+          <div class="table-row table-head" aria-hidden="true">
             <span>Article</span><span>Prix</span><span>Stock</span><span>État</span><span></span>
           </div>
           @for (product of filteredProducts(); track product.id) {
-            <button class="table-row product-row" type="button" (click)="editProduct(product)">
+            <button
+              class="table-row product-row"
+              type="button"
+              (click)="editProduct(product)"
+              [attr.aria-label]="'Modifier l’article ' + product.name"
+            >
               <span class="product-cell">
                 <img [src]="mainImage(product)" [alt]="product.name" />
                 <span><strong>{{ product.name }}</strong><small>{{ product.brand }} · {{ product.variants[0].sku }}</small></span>
@@ -127,7 +136,7 @@
               <span class="status" [class.draft]="product.status === 'draft'" [class.archived]="product.status === 'archived'">
                 {{ product.status === "active" ? "En ligne" : product.status === "draft" ? "Brouillon" : "Archivé" }}
               </span>
-              <span aria-hidden="true">→</span>
+              <span class="row-action">Modifier <span aria-hidden="true">→</span></span>
             </button>
           } @empty {
             <div class="empty-state">
@@ -141,14 +150,24 @@
   </div>
 
   @if (draft(); as item) {
-    <div class="drawer-backdrop" (click)="closeEditor()"></div>
-    <aside class="editor" aria-label="Modifier l’article">
+    <div class="drawer-backdrop" (click)="requestCloseEditor()"></div>
+    <aside
+      class="editor"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="product-editor-title"
+    >
       <header>
         <div>
           <p class="eyebrow">{{ item.id ? "Modifier" : "Nouvel article" }}</p>
-          <h2>{{ item.name || "Article sans nom" }}</h2>
+          <h2 id="product-editor-title" tabindex="-1">{{ item.name || "Article sans nom" }}</h2>
         </div>
-        <button class="close-button" type="button" (click)="closeEditor()" aria-label="Fermer">×</button>
+        <button
+          class="close-button"
+          type="button"
+          (click)="requestCloseEditor()"
+          aria-label="Fermer l’éditeur"
+        >×</button>
       </header>
 
       <form (ngSubmit)="saveProduct(item)">
@@ -187,7 +206,7 @@
           </label>
         </section>
 
-        <section class="form-section" id="stock">
+        <section class="form-section" id="product-stock">
           <div class="section-title"><span>02</span><h3>Prix & variantes</h3></div>
           @for (variant of item.variants; track $index; let i = $index) {
             <div class="variant-block">
@@ -251,6 +270,9 @@
 
         @if (error()) {
           <p class="message error" role="alert">{{ error() }}</p>
+        }
+        @if (feedback()) {
+          <p class="message success" role="status">{{ feedback() }}</p>
         }
 
         <footer class="editor-actions">

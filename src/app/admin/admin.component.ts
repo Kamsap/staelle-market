@@ -1,6 +1,6 @@
 import { CommonModule, DOCUMENT } from "@angular/common";
 import { HttpErrorResponse } from "@angular/common/http";
-import { Component, OnInit, computed, inject, signal } from "@angular/core";
+import { Component, HostListener, OnInit, computed, inject, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { firstValueFrom } from "rxjs";
 import {
@@ -24,6 +24,8 @@ type ProductDraft = AdminProductPayload & { id?: number };
 export class AdminComponent implements OnInit {
   private readonly api = inject(AdminService);
   private readonly document = inject(DOCUMENT);
+  private initialDraftSnapshot = "";
+  private lastFocusedElement: HTMLElement | null = null;
 
   readonly admin = signal<AdminUser | null>(null);
   readonly dashboard = signal<AdminDashboard | null>(null);
@@ -118,7 +120,7 @@ export class AdminComponent implements OnInit {
 
   newProduct(): void {
     this.clearMessages();
-    this.draft.set({
+    this.openEditor({
       name: "",
       slug: "",
       brand: "Adidas",
@@ -129,18 +131,62 @@ export class AdminComponent implements OnInit {
       variants: [this.emptyVariant()],
       images: [],
     });
-    this.document.body.style.overflow = "hidden";
   }
 
   editProduct(product: AdminProduct): void {
     this.clearMessages();
-    this.draft.set(JSON.parse(JSON.stringify(product)) as ProductDraft);
-    this.document.body.style.overflow = "hidden";
+    this.openEditor(JSON.parse(JSON.stringify(product)) as ProductDraft);
   }
 
-  closeEditor(): void {
+  requestCloseEditor(): void {
+    const item = this.draft();
+    const hasChanges = item && JSON.stringify(item) !== this.initialDraftSnapshot;
+    if (
+      hasChanges &&
+      !this.document.defaultView?.confirm(
+        "Quitter sans enregistrer ? Les modifications de cet article seront perdues.",
+      )
+    ) {
+      return;
+    }
+    this.closeEditor();
+  }
+
+  @HostListener("document:keydown", ["$event"])
+  handleEditorKeyboard(event: KeyboardEvent): void {
+    if (!this.draft()) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      this.requestCloseEditor();
+      return;
+    }
+    if (event.key !== "Tab") return;
+
+    const editor = this.document.querySelector<HTMLElement>(".editor");
+    const focusable = Array.from(
+      editor?.querySelectorAll<HTMLElement>(
+        'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [href], [tabindex]:not([tabindex="-1"])',
+      ) ?? [],
+    ).filter((element) => element.offsetParent !== null);
+    if (!focusable.length) return;
+
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && this.document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && this.document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  private closeEditor(): void {
+    const returnFocus = this.lastFocusedElement;
     this.draft.set(null);
+    this.initialDraftSnapshot = "";
     this.document.body.style.overflow = "";
+    this.document.defaultView?.setTimeout(() => returnFocus?.focus());
   }
 
   setName(item: ProductDraft, value: string): void {
@@ -245,10 +291,16 @@ export class AdminComponent implements OnInit {
         note: this.stockNote(),
       })
       .subscribe({
-        next: () => {
+        next: (movement) => {
           this.busy.set(false);
+          variant.stock_on_hand = movement.stock_after;
+          variant.available_stock = Math.max(
+            0,
+            movement.stock_after - variant.stock_reserved,
+          );
+          this.initialDraftSnapshot = JSON.stringify(item);
+          this.stockDelta.set(1);
           this.feedback.set("Mouvement de stock enregistré.");
-          this.closeEditor();
           this.refreshData();
         },
         error: (error) => {
@@ -294,6 +346,16 @@ export class AdminComponent implements OnInit {
       low_stock_threshold: 2,
       is_active: true,
     };
+  }
+
+  private openEditor(item: ProductDraft): void {
+    this.lastFocusedElement = this.document.activeElement as HTMLElement | null;
+    this.initialDraftSnapshot = JSON.stringify(item);
+    this.draft.set(item);
+    this.document.body.style.overflow = "hidden";
+    this.document.defaultView?.setTimeout(() => {
+      this.document.getElementById("product-editor-title")?.focus();
+    });
   }
 
   private payload(item: ProductDraft): AdminProductPayload {

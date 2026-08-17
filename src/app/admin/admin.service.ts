@@ -65,6 +65,16 @@ export interface StockAdjustmentPayload {
   note: string;
 }
 
+export interface InventoryMovement {
+  id: number;
+  variant_id: number;
+  quantity_delta: number;
+  stock_after: number;
+  kind: string;
+  note: string;
+  created_at: string;
+}
+
 @Injectable({ providedIn: "root" })
 export class AdminService {
   private readonly http = inject(HttpClient);
@@ -114,8 +124,8 @@ export class AdminService {
     return this.http.delete<void>(`${API_CONFIG.baseUrl}/admin/products/${id}`, this.options);
   }
 
-  adjustStock(payload: StockAdjustmentPayload): Observable<unknown> {
-    return this.http.post(
+  adjustStock(payload: StockAdjustmentPayload): Observable<InventoryMovement> {
+    return this.http.post<InventoryMovement>(
       `${API_CONFIG.baseUrl}/admin/stock-adjustments`,
       payload,
       this.options,
