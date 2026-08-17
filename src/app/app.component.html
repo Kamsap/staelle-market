@@ -39,8 +39,7 @@
       </div>
     </div>
     <div class="hero-visual" aria-label="Sac Nike de la nouvelle collection">
-      <span class="hero-index">01 / 60</span
-      ><span class="hero-word" aria-hidden="true">MOVE</span
+      <span class="hero-word" aria-hidden="true">MOVE</span
       ><img
         src="/images/products/nike/dc4244-364.avif"
         alt="Sac à dos Nike Heritage vert"
@@ -52,10 +51,10 @@
   </section>
   <!-- Arguments de confiance -->
   <section class="service-strip" id="services" aria-label="Nos engagements">
-    <p><span>01</span> Sélection premium</p>
-    <p><span>02</span> Stock vérifié</p>
-    <p><span>03</span> Commande directe</p>
-    <p><span>04</span> Livraison au Cameroun</p>
+    <p>Sélection premium</p>
+    <p>Stock vérifié</p>
+    <p>Commande directe</p>
+    <p>Livraison au Cameroun</p>
   </section>
   <!-- Catalogue, recherche et filtres -->
   <section class="catalogue" id="catalogue">
@@ -118,12 +117,9 @@
       </div>
     </div>
     <div class="products-grid">
-      @for (product of displayedProducts(); track product.id; let i = $index) {
+      @for (product of displayedProducts(); track product.id) {
         <article class="product-card" [class.sold-out]="product.stock === 0">
           <div class="product-media">
-            <span class="product-number">{{
-              (i + 1).toString().padStart(2, "0")
-            }}</span>
             @if (product.featured) {
               <span class="badge">Notre choix</span>
             }

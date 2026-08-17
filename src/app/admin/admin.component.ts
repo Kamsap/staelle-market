@@ -95,6 +95,11 @@ export class AdminComponent implements OnInit {
     });
   }
 
+  scrollToSection(event: Event, sectionId: string): void {
+    event.preventDefault();
+    this.document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  }
+
   refreshData(): void {
     // Le catalogue doit rester administrable même si un indicateur du tableau
     // de bord rencontre momentanément un problème côté serveur.

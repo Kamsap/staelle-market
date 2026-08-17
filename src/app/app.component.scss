@@ -177,14 +177,6 @@ h1 em {
   color: rgba(17, 18, 15, 0.09);
   transform: rotate(-90deg);
 }
-.hero-index {
-  position: absolute;
-  top: 30px;
-  right: 34px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-}
 .hero-product {
   position: absolute;
   left: 34px;
@@ -208,15 +200,11 @@ h1 em {
   padding: 25px clamp(20px, 3vw, 42px);
   font-size: 0.78rem;
   font-weight: 600;
+  text-align: center;
   border-right: 1px solid var(--line);
 }
 .service-strip p:last-child {
   border: 0;
-}
-.service-strip span {
-  color: var(--muted);
-  margin-right: 12px;
-  font-size: 0.65rem;
 }
 .catalogue {
   padding: clamp(72px, 10vw, 150px) clamp(20px, 4vw, 64px);
@@ -311,13 +299,6 @@ h1 em {
   height: 82%;
   object-fit: contain;
   transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-.product-number {
-  position: absolute;
-  top: 15px;
-  left: 16px;
-  font-size: 0.65rem;
-  color: var(--muted);
 }
 .badge {
   position: absolute;
@@ -458,9 +439,6 @@ h1 em {
   display: grid;
   place-items: center;
   cursor: zoom-in;
-}
-.product-number {
-  z-index: 2;
 }
 .view-photos {
   position: absolute;
@@ -838,10 +816,6 @@ footer small {
   .product-main-image {
     width: 78%;
     height: 76%;
-  }
-  .product-number {
-    top: 10px;
-    left: 10px;
   }
   .badge {
     top: 8px;

@@ -225,7 +225,6 @@ button:disabled { cursor: wait; opacity: .55; transform: none; }
 .sidebar .future {
   display: flex;
   align-items: center;
-  gap: 14px;
   min-height: 44px;
   padding: 10px 12px;
   color: #aaa89f;
@@ -233,15 +232,7 @@ button:disabled { cursor: wait; opacity: .55; transform: none; }
   text-decoration: none;
 }
 
-.sidebar nav a span,
-.sidebar .future b {
-  color: var(--lime);
-  font-size: 10px;
-  letter-spacing: .08em;
-}
-
 .sidebar nav a.active { color: var(--ink); background: var(--lime); font-weight: 800; }
-.sidebar nav a.active span { color: var(--ink); }
 .sidebar .future { opacity: .62; }
 
 .sidebar-account {
@@ -424,8 +415,7 @@ button:disabled { cursor: wait; opacity: .55; transform: none; }
 
 .editor form { padding: 0 var(--editor-gutter) 40px; }
 .form-section { padding: 34px 0; border-bottom: 1px solid var(--line); }
-.section-title { display: flex; align-items: center; gap: 13px; margin-bottom: 25px; }
-.section-title > span { color: var(--focus); font-size: 11px; font-weight: 900; }
+.section-title { display: flex; align-items: center; margin-bottom: 25px; }
 .section-title h3 { margin: 0; font-size: 19px; }
 .wide { margin-bottom: 18px; }
 
