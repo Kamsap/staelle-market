@@ -12,7 +12,7 @@ const baseUrl =
     : "/api/v1";
 
 export const API_CONFIG: ApiConfig = {
-  catalogEnabled: false,
+  catalogEnabled: true,
   baseUrl,
   productsPath: "/products",
 };

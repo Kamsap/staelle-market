@@ -16,6 +16,11 @@ backend/.venv/
 backend/.env
 backend/*.db
 backend/test_*.db
+backend/migration_*.db
+backend/uploads/
+backend/test_uploads/
+test_staelle.db
+test_uploads/
 backend/**/__pycache__/
 .pytest_cache/
 

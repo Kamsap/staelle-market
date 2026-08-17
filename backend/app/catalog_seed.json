@@ -1,0 +1,2447 @@
+[
+  {
+    "id": 1,
+    "name": "Sac à dos Essentials Back to Campus",
+    "slug": "sac-a-dos-essentials-back-to-campus-1",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Essentials Back to Campus en wonder cargo / noir. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": true,
+    "variants": [
+      {
+        "sku": "KE5659",
+        "size": null,
+        "color": "Wonder Cargo / Noir",
+        "selling_price": 23000,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/ke5659.jpg",
+        "alt_text": "Sac à dos Essentials Back to Campus",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/ke5659-2.jpg",
+        "alt_text": "Sac à dos Essentials Back to Campus",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/ke5659-3.jpg",
+        "alt_text": "Sac à dos Essentials Back to Campus",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tote Bag Adidas Prime",
+    "slug": "tote-bag-adidas-prime-2",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Tote Bag Adidas Prime en halo silver. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KC6820",
+        "size": null,
+        "color": "Halo Silver",
+        "selling_price": 23000,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kc6820.jpg",
+        "alt_text": "Tote Bag Adidas Prime",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kc6820-2.jpg",
+        "alt_text": "Tote Bag Adidas Prime",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kc6820-3.jpg",
+        "alt_text": "Tote Bag Adidas Prime",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sac à dos Classic Tape Lamine Yamal",
+    "slug": "sac-a-dos-classic-tape-lamine-yamal-3",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Classic Tape Lamine Yamal en blanc / rouge. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": true,
+    "variants": [
+      {
+        "sku": "KH1560",
+        "size": null,
+        "color": "Blanc / Rouge",
+        "selling_price": 23575,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 4,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kh1560.jpg",
+        "alt_text": "Sac à dos Classic Tape Lamine Yamal",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kh1560-2.jpg",
+        "alt_text": "Sac à dos Classic Tape Lamine Yamal",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kh1560-3.jpg",
+        "alt_text": "Sac à dos Classic Tape Lamine Yamal",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sac en toile 4ATHLTS petit format",
+    "slug": "sac-en-toile-4athlts-petit-format-4",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac en toile 4ATHLTS petit format en bleu marine / blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "IY1816",
+        "size": null,
+        "color": "Bleu marine / Blanc",
+        "selling_price": 24725,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/iy1816.jpg",
+        "alt_text": "Sac en toile 4ATHLTS petit format",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/iy1816-2.jpg",
+        "alt_text": "Sac en toile 4ATHLTS petit format",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/iy1816-3.jpg",
+        "alt_text": "Sac en toile 4ATHLTS petit format",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sac à dos avec trousse",
+    "slug": "sac-a-dos-avec-trousse-5",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos avec trousse en bleu. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JW0314",
+        "size": null,
+        "color": "Bleu",
+        "selling_price": 27025,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jw0314.jpg",
+        "alt_text": "Sac à dos avec trousse",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jw0314-2.jpg",
+        "alt_text": "Sac à dos avec trousse",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jw0314-3.jpg",
+        "alt_text": "Sac à dos avec trousse",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sac à dos Adidas Primelift",
+    "slug": "sac-a-dos-adidas-primelift-6",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Adidas Primelift en lavande / bleu marine. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KE3780",
+        "size": null,
+        "color": "Lavande / Bleu marine",
+        "selling_price": 31050,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/ke3780.jpg",
+        "alt_text": "Sac à dos Adidas Primelift",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/ke3780-2.jpg",
+        "alt_text": "Sac à dos Adidas Primelift",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/ke3780-3.jpg",
+        "alt_text": "Sac à dos Adidas Primelift",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Sac à dos Adicolor Classic",
+    "slug": "sac-a-dos-adicolor-classic-7",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Adicolor Classic en night indigo. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JX0213",
+        "size": null,
+        "color": "Night Indigo",
+        "selling_price": 21275,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jx0213.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jx0213-2.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jx0213-3.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sac à dos All Blacks",
+    "slug": "sac-a-dos-all-blacks-8",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos All Blacks en noir. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JW1465",
+        "size": null,
+        "color": "Noir",
+        "selling_price": 33350,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jw1465.jpg",
+        "alt_text": "Sac à dos All Blacks",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jw1465-2.jpg",
+        "alt_text": "Sac à dos All Blacks",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jw1465-3.jpg",
+        "alt_text": "Sac à dos All Blacks",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Predator Club multi-surfaces",
+    "slug": "predator-club-multi-surfaces-9",
+    "brand": "Adidas",
+    "category": "Chaussure",
+    "description": "Predator Club multi-surfaces en blanc / noir / jaune. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JH8847",
+        "size": "42",
+        "color": "Blanc / Noir / Jaune",
+        "selling_price": 38525,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jh8847.jpg",
+        "alt_text": "Predator Club multi-surfaces",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jh8847-2.jpg",
+        "alt_text": "Predator Club multi-surfaces",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jh8847-3.jpg",
+        "alt_text": "Predator Club multi-surfaces",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Sac à dos Predator Training Power",
+    "slug": "sac-a-dos-predator-training-power-10",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Predator Training Power en blanc / noir / rouge. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KC8894",
+        "size": null,
+        "color": "Blanc / Noir / Rouge",
+        "selling_price": 39100,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kc8894.jpg",
+        "alt_text": "Sac à dos Predator Training Power",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kc8894-2.jpg",
+        "alt_text": "Sac à dos Predator Training Power",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kc8894-3.jpg",
+        "alt_text": "Sac à dos Predator Training Power",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Sac à dos Tiro Junior",
+    "slug": "sac-a-dos-tiro-junior-11",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Tiro Junior en rose / blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KT2255",
+        "size": null,
+        "color": "Rose / Blanc",
+        "selling_price": 42550,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kt2255.jpg",
+        "alt_text": "Sac à dos Tiro Junior",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kt2255-2.jpg",
+        "alt_text": "Sac à dos Tiro Junior",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kt2255-3.jpg",
+        "alt_text": "Sac à dos Tiro Junior",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Sac à cordon Everyday Icons",
+    "slug": "sac-a-cordon-everyday-icons-12",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à cordon Everyday Icons en kaki. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KE0110",
+        "size": null,
+        "color": "Kaki",
+        "selling_price": 28750,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/ke0110.jpg",
+        "alt_text": "Sac à cordon Everyday Icons",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/ke0110-2.jpg",
+        "alt_text": "Sac à cordon Everyday Icons",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/ke0110-3.jpg",
+        "alt_text": "Sac à cordon Everyday Icons",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Sac à dos Adidas Prime",
+    "slug": "sac-a-dos-adidas-prime-13",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Adidas Prime en wonder sage. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KC6822",
+        "size": null,
+        "color": "Wonder Sage",
+        "selling_price": 31050,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kc6822.jpg",
+        "alt_text": "Sac à dos Adidas Prime",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kc6822-2.jpg",
+        "alt_text": "Sac à dos Adidas Prime",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kc6822-3.jpg",
+        "alt_text": "Sac à dos Adidas Prime",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Sac à dos Adidas Prime",
+    "slug": "sac-a-dos-adidas-prime-14",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Adidas Prime en halo silver. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JY7644",
+        "size": null,
+        "color": "Halo Silver",
+        "selling_price": 28750,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jy7644.jpg",
+        "alt_text": "Sac à dos Adidas Prime",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jy7644-2.jpg",
+        "alt_text": "Sac à dos Adidas Prime",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jy7644-3.jpg",
+        "alt_text": "Sac à dos Adidas Prime",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Sac à dos Adicolor",
+    "slug": "sac-a-dos-adicolor-15",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Adicolor en bliss pink. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "HK2625",
+        "size": null,
+        "color": "Bliss Pink",
+        "selling_price": 21275,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/hk2625.jpg",
+        "alt_text": "Sac à dos Adicolor",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/hk2625-2.jpg",
+        "alt_text": "Sac à dos Adicolor",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/hk2625-3.jpg",
+        "alt_text": "Sac à dos Adicolor",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Sac à dos Adicolor Classic",
+    "slug": "sac-a-dos-adicolor-classic-16",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Adicolor Classic en better scarlet. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JX0215",
+        "size": null,
+        "color": "Better Scarlet",
+        "selling_price": 23575,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jx0215.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jx0215-2.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jx0215-3.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Sac Adicolor XS",
+    "slug": "sac-adicolor-xs-17",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac Adicolor XS en night indigo. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KD7845",
+        "size": null,
+        "color": "Night Indigo",
+        "selling_price": 32200,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kd7845.jpg",
+        "alt_text": "Sac Adicolor XS",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kd7845-2.jpg",
+        "alt_text": "Sac Adicolor XS",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kd7845-3.jpg",
+        "alt_text": "Sac Adicolor XS",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Sac Adicolor XS",
+    "slug": "sac-adicolor-xs-18",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac Adicolor XS en aurora coffee. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KD7844",
+        "size": null,
+        "color": "Aurora Coffee",
+        "selling_price": 35075,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kd7844.jpg",
+        "alt_text": "Sac Adicolor XS",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kd7844-2.jpg",
+        "alt_text": "Sac Adicolor XS",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kd7844-3.jpg",
+        "alt_text": "Sac Adicolor XS",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Sac à dos effet délavé CL",
+    "slug": "sac-a-dos-effet-delave-cl-19",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos effet délavé CL en noir. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KC8648",
+        "size": null,
+        "color": "Noir",
+        "selling_price": 35650,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kc8648.jpg",
+        "alt_text": "Sac à dos effet délavé CL",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kc8648-2.jpg",
+        "alt_text": "Sac à dos effet délavé CL",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kc8648-3.jpg",
+        "alt_text": "Sac à dos effet délavé CL",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Sac en toile 4ATHLTS petit format",
+    "slug": "sac-en-toile-4athlts-petit-format-20",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac en toile 4ATHLTS petit format en noir / blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "IM5523",
+        "size": null,
+        "color": "Noir / Blanc",
+        "selling_price": 27025,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/im5523.jpg",
+        "alt_text": "Sac en toile 4ATHLTS petit format",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/im5523-2.jpg",
+        "alt_text": "Sac en toile 4ATHLTS petit format",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/im5523-3.jpg",
+        "alt_text": "Sac en toile 4ATHLTS petit format",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Sac à dos APWR",
+    "slug": "sac-a-dos-apwr-21",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos APWR en bleu marine multicolore. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "IY9404",
+        "size": null,
+        "color": "Bleu marine multicolore",
+        "selling_price": 24725,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/iy9404.jpg",
+        "alt_text": "Sac à dos APWR",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/iy9404-2.jpg",
+        "alt_text": "Sac à dos APWR",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/iy9404-3.jpg",
+        "alt_text": "Sac à dos APWR",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Sac à dos 3 bandes Back-to-School",
+    "slug": "sac-a-dos-3-bandes-back-to-school-22",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos 3 bandes Back-to-School en tropic bloom / blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KE5637",
+        "size": null,
+        "color": "Tropic Bloom / Blanc",
+        "selling_price": 20125,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/ke5637.jpg",
+        "alt_text": "Sac à dos 3 bandes Back-to-School",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/ke5637-2.jpg",
+        "alt_text": "Sac à dos 3 bandes Back-to-School",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/ke5637-3.jpg",
+        "alt_text": "Sac à dos 3 bandes Back-to-School",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Sac de sport Training Defender M",
+    "slug": "sac-de-sport-training-defender-m-23",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac de sport Training Defender M en noir / beige. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KC9922",
+        "size": null,
+        "color": "Noir / Beige",
+        "selling_price": 32200,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kc9922.jpg",
+        "alt_text": "Sac de sport Training Defender M",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kc9922-2.jpg",
+        "alt_text": "Sac de sport Training Defender M",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kc9922-3.jpg",
+        "alt_text": "Sac de sport Training Defender M",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Sac Airliner",
+    "slug": "sac-airliner-24",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac Airliner en blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JX0253",
+        "size": null,
+        "color": "Blanc",
+        "selling_price": 39100,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jx0253.jpg",
+        "alt_text": "Sac Airliner",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jx0253-2.jpg",
+        "alt_text": "Sac Airliner",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jx0253-3.jpg",
+        "alt_text": "Sac Airliner",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Sac Airliner Adicolor",
+    "slug": "sac-airliner-adicolor-25",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac Airliner Adicolor en blanc / crystal sky. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KD7848",
+        "size": null,
+        "color": "Blanc / Crystal Sky",
+        "selling_price": 35075,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/kd7848.jpg",
+        "alt_text": "Sac Airliner Adicolor",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/kd7848-2.jpg",
+        "alt_text": "Sac Airliner Adicolor",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/kd7848-3.jpg",
+        "alt_text": "Sac Airliner Adicolor",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Sac à dos monogramme",
+    "slug": "sac-a-dos-monogramme-26",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos monogramme en noir. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "IU0009",
+        "size": null,
+        "color": "Noir",
+        "selling_price": 29325,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/iu0009.jpg",
+        "alt_text": "Sac à dos monogramme",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/iu0009-2.jpg",
+        "alt_text": "Sac à dos monogramme",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/iu0009-3.jpg",
+        "alt_text": "Sac à dos monogramme",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Sac Essentials 3-Stripes moyen",
+    "slug": "sac-essentials-3-stripes-moyen-27",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac Essentials 3-Stripes moyen en bleu foncé / blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "JM9059",
+        "size": null,
+        "color": "Bleu foncé / Blanc",
+        "selling_price": 25875,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jm9059.jpg",
+        "alt_text": "Sac Essentials 3-Stripes moyen",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jm9059-2.jpg",
+        "alt_text": "Sac Essentials 3-Stripes moyen",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jm9059-3.jpg",
+        "alt_text": "Sac Essentials 3-Stripes moyen",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "F50 Messi Club multi-surfaces",
+    "slug": "f50-messi-club-multi-surfaces-28",
+    "brand": "Adidas",
+    "category": "Chaussure",
+    "description": "F50 Messi Club multi-surfaces en blanc / rouge / argent. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": true,
+    "variants": [
+      {
+        "sku": "JP7443",
+        "size": "41 1/3",
+        "color": "Blanc / Rouge / Argent",
+        "selling_price": 46000,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/jp7443.jpg",
+        "alt_text": "F50 Messi Club multi-surfaces",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/jp7443-2.jpg",
+        "alt_text": "F50 Messi Club multi-surfaces",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/jp7443-3.jpg",
+        "alt_text": "F50 Messi Club multi-surfaces",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Sac à dos Logo Enfants",
+    "slug": "sac-a-dos-logo-enfants-29",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Logo Enfants en bleu / blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "KE0412",
+        "size": null,
+        "color": "Bleu / Blanc",
+        "selling_price": 19550,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/adidas/ke0412.jpg",
+        "alt_text": "Sac à dos Logo Enfants",
+        "position": 0
+      },
+      {
+        "path": "/images/products/adidas/ke0412-2.jpg",
+        "alt_text": "Sac à dos Logo Enfants",
+        "position": 1
+      },
+      {
+        "path": "/images/products/adidas/ke0412-3.jpg",
+        "alt_text": "Sac à dos Logo Enfants",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Sac à dos de basketball",
+    "slug": "sac-a-dos-de-basketball-30",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos de basketball en blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302477",
+        "size": null,
+        "color": "Blanc",
+        "selling_price": 23000,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302477.jpg",
+        "alt_text": "Sac à dos de basketball",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302477-2.jpg",
+        "alt_text": "Sac à dos de basketball",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302477-3.jpg",
+        "alt_text": "Sac à dos de basketball",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Sac de football Tiro League",
+    "slug": "sac-de-football-tiro-league-31",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac de football Tiro League en rouge. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319056",
+        "size": null,
+        "color": "Rouge",
+        "selling_price": 18400,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319056.jpg",
+        "alt_text": "Sac de football Tiro League",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319056-2.jpg",
+        "alt_text": "Sac de football Tiro League",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319056-3.jpg",
+        "alt_text": "Sac de football Tiro League",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Sac bowling",
+    "slug": "sac-bowling-32",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac bowling en noir. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319093",
+        "size": null,
+        "color": "Noir",
+        "selling_price": 16675,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319093.jpg",
+        "alt_text": "Sac bowling",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319093-2.jpg",
+        "alt_text": "Sac bowling",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319093-3.jpg",
+        "alt_text": "Sac bowling",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Sac à dos Lin G",
+    "slug": "sac-a-dos-lin-g-33",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Lin G en rose. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319125",
+        "size": null,
+        "color": "Rose",
+        "selling_price": 19550,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319125.jpg",
+        "alt_text": "Sac à dos Lin G",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319125-2.jpg",
+        "alt_text": "Sac à dos Lin G",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319125-3.jpg",
+        "alt_text": "Sac à dos Lin G",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Sac porté épaule Liberty",
+    "slug": "sac-porte-epaule-liberty-34",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac porté épaule Liberty en blanc / jaune. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319146",
+        "size": null,
+        "color": "Blanc / Jaune",
+        "selling_price": 36225,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319146.jpg",
+        "alt_text": "Sac porté épaule Liberty",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319146-2.jpg",
+        "alt_text": "Sac porté épaule Liberty",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319146-3.jpg",
+        "alt_text": "Sac porté épaule Liberty",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Sac à dos Classic",
+    "slug": "sac-a-dos-classic-35",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Classic en rose. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319154",
+        "size": null,
+        "color": "Rose",
+        "selling_price": 16675,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319154.jpg",
+        "alt_text": "Sac à dos Classic",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319154-2.jpg",
+        "alt_text": "Sac à dos Classic",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319154-3.jpg",
+        "alt_text": "Sac à dos Classic",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Sac à dos d’entraînement",
+    "slug": "sac-a-dos-d-entrainement-36",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos d’entraînement en rose. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319158",
+        "size": null,
+        "color": "Rose",
+        "selling_price": 19550,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319158.jpg",
+        "alt_text": "Sac à dos d’entraînement",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319158-2.jpg",
+        "alt_text": "Sac à dos d’entraînement",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319158-3.jpg",
+        "alt_text": "Sac à dos d’entraînement",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Sac à dos Doodle",
+    "slug": "sac-a-dos-doodle-37",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Doodle en rose. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319592",
+        "size": null,
+        "color": "Rose",
+        "selling_price": 13225,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319592.jpg",
+        "alt_text": "Sac à dos Doodle",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319592-2.jpg",
+        "alt_text": "Sac à dos Doodle",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319592-3.jpg",
+        "alt_text": "Sac à dos Doodle",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Sac à dos Adicolor Classic",
+    "slug": "sac-a-dos-adicolor-classic-38",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Adicolor Classic en marron. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319142",
+        "size": null,
+        "color": "Marron",
+        "selling_price": 21275,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319142.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319142-3.jpg",
+        "alt_text": "Sac à dos Adicolor Classic",
+        "position": 1
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Sac à dos Essentials",
+    "slug": "sac-a-dos-essentials-39",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Essentials en bleu marine. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319153",
+        "size": null,
+        "color": "Bleu marine",
+        "selling_price": 12650,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319153.jpg",
+        "alt_text": "Sac à dos Essentials",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319153-2.jpg",
+        "alt_text": "Sac à dos Essentials",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319153-3.jpg",
+        "alt_text": "Sac à dos Essentials",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Sac à dos Classic",
+    "slug": "sac-a-dos-classic-40",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Classic en bleu ciel. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40491223",
+        "size": null,
+        "color": "Bleu ciel",
+        "selling_price": 15525,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40491223.jpg",
+        "alt_text": "Sac à dos Classic",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40491223-2.jpg",
+        "alt_text": "Sac à dos Classic",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40491223-3.jpg",
+        "alt_text": "Sac à dos Classic",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Sac à dos Training Bars",
+    "slug": "sac-a-dos-training-bars-41",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Training Bars en marron. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319159",
+        "size": null,
+        "color": "Marron",
+        "selling_price": 13225,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319159.jpg",
+        "alt_text": "Sac à dos Training Bars",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319159-2.jpg",
+        "alt_text": "Sac à dos Training Bars",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319159-3.jpg",
+        "alt_text": "Sac à dos Training Bars",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Sac à dos Linear Colorblock",
+    "slug": "sac-a-dos-linear-colorblock-42",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Linear Colorblock en bleu. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": true,
+    "variants": [
+      {
+        "sku": "40319167",
+        "size": null,
+        "color": "Bleu",
+        "selling_price": 11500,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 4,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319167.jpg",
+        "alt_text": "Sac à dos Linear Colorblock",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319167-2.jpg",
+        "alt_text": "Sac à dos Linear Colorblock",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319167-3.jpg",
+        "alt_text": "Sac à dos Linear Colorblock",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Sac à dos Training Bars",
+    "slug": "sac-a-dos-training-bars-43",
+    "brand": "Adidas",
+    "category": "Sac",
+    "description": "Sac à dos Training Bars en gris clair. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319160",
+        "size": null,
+        "color": "Gris clair",
+        "selling_price": 13225,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319160.jpg",
+        "alt_text": "Sac à dos Training Bars",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319160-2.jpg",
+        "alt_text": "Sac à dos Training Bars",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319160-3.jpg",
+        "alt_text": "Sac à dos Training Bars",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Baskets Tensaur",
+    "slug": "baskets-tensaur-44",
+    "brand": "Adidas",
+    "category": "Chaussure",
+    "description": "Baskets Tensaur en bleu marine. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302534",
+        "size": "20",
+        "color": "Bleu marine",
+        "selling_price": 18400,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302534.jpg",
+        "alt_text": "Baskets Tensaur",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302534-2.jpg",
+        "alt_text": "Baskets Tensaur",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302534-3.jpg",
+        "alt_text": "Baskets Tensaur",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Chaussures de football Lionel Messi",
+    "slug": "chaussures-de-football-lionel-messi-45",
+    "brand": "Adidas",
+    "category": "Chaussure",
+    "description": "Chaussures de football Lionel Messi en blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302568",
+        "size": "45 1/3",
+        "color": "Blanc",
+        "selling_price": 47725,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302568.jpg",
+        "alt_text": "Chaussures de football Lionel Messi",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302568-2.jpg",
+        "alt_text": "Chaussures de football Lionel Messi",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302568-3.jpg",
+        "alt_text": "Chaussures de football Lionel Messi",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Pantalon loose Wardrobe Essentials",
+    "slug": "pantalon-loose-wardrobe-essentials-46",
+    "brand": "Adidas",
+    "category": "Vêtement",
+    "description": "Pantalon loose Wardrobe Essentials en gris clair chiné. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302659",
+        "size": "L",
+        "color": "Gris clair chiné",
+        "selling_price": 24725,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302659.jpg",
+        "alt_text": "Pantalon loose Wardrobe Essentials",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302659-2.jpg",
+        "alt_text": "Pantalon loose Wardrobe Essentials",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302659-3.jpg",
+        "alt_text": "Pantalon loose Wardrobe Essentials",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Veste Adidas bicolore",
+    "slug": "veste-adidas-bicolore-47",
+    "brand": "Adidas",
+    "category": "Vêtement",
+    "description": "Veste Adidas bicolore en noir / blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302799",
+        "size": "M",
+        "color": "Noir / Blanc",
+        "selling_price": 25875,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302799.jpg",
+        "alt_text": "Veste Adidas bicolore",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302799-2.jpg",
+        "alt_text": "Veste Adidas bicolore",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302799-3.jpg",
+        "alt_text": "Veste Adidas bicolore",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Veste de survêtement Main Originals",
+    "slug": "veste-de-survetement-main-originals-48",
+    "brand": "Adidas",
+    "category": "Vêtement",
+    "description": "Veste de survêtement Main Originals en noir. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302858",
+        "size": "15/16 ans",
+        "color": "Noir",
+        "selling_price": 20700,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302858.jpg",
+        "alt_text": "Veste de survêtement Main Originals",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302858-2.jpg",
+        "alt_text": "Veste de survêtement Main Originals",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302858-3.jpg",
+        "alt_text": "Veste de survêtement Main Originals",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Veste House of Tiro",
+    "slug": "veste-house-of-tiro-49",
+    "brand": "Adidas",
+    "category": "Vêtement",
+    "description": "Veste House of Tiro en vert d’eau. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302859",
+        "size": "M",
+        "color": "Vert d’eau",
+        "selling_price": 36225,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302859.jpg",
+        "alt_text": "Veste House of Tiro",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302859-2.jpg",
+        "alt_text": "Veste House of Tiro",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302859-3.jpg",
+        "alt_text": "Veste House of Tiro",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Lot de 3 paires de chaussettes",
+    "slug": "lot-de-3-paires-de-chaussettes-50",
+    "brand": "Adidas",
+    "category": "Accessoire",
+    "description": "Lot de 3 paires de chaussettes en blanc / rouge / vert. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40491277",
+        "size": "22/24",
+        "color": "Blanc / Rouge / Vert",
+        "selling_price": 4025,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40491277.jpg",
+        "alt_text": "Lot de 3 paires de chaussettes",
+        "position": 0
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "T-shirt Training Essentials",
+    "slug": "t-shirt-training-essentials-51",
+    "brand": "Adidas",
+    "category": "Vêtement",
+    "description": "T-shirt Training Essentials en vert d’eau. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40302990",
+        "size": "15/16 ans",
+        "color": "Vert d’eau",
+        "selling_price": 6900,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40302990.jpg",
+        "alt_text": "T-shirt Training Essentials",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40302990-2.jpg",
+        "alt_text": "T-shirt Training Essentials",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40302990-3.jpg",
+        "alt_text": "T-shirt Training Essentials",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "T-shirt Training Sere",
+    "slug": "t-shirt-training-sere-52",
+    "brand": "Adidas",
+    "category": "Vêtement",
+    "description": "T-shirt Training Sere en blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319514",
+        "size": "15/16 ans",
+        "color": "Blanc",
+        "selling_price": 13225,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319514.jpg",
+        "alt_text": "T-shirt Training Sere",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319514-2.jpg",
+        "alt_text": "T-shirt Training Sere",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319514-3.jpg",
+        "alt_text": "T-shirt Training Sere",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Lot de 2 paires de chaussettes Ruffle",
+    "slug": "lot-de-2-paires-de-chaussettes-ruffle-53",
+    "brand": "Adidas",
+    "category": "Accessoire",
+    "description": "Lot de 2 paires de chaussettes Ruffle en blanc. Sélection authentique Adidas.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "40319148",
+        "size": "40/42",
+        "color": "Blanc",
+        "selling_price": 7475,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/showroomprive/40319148.jpg",
+        "alt_text": "Lot de 2 paires de chaussettes Ruffle",
+        "position": 0
+      },
+      {
+        "path": "/images/products/showroomprive/40319148-2.jpg",
+        "alt_text": "Lot de 2 paires de chaussettes Ruffle",
+        "position": 1
+      },
+      {
+        "path": "/images/products/showroomprive/40319148-3.jpg",
+        "alt_text": "Lot de 2 paires de chaussettes Ruffle",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Sac à dos Nike 21 L — DD0562-323",
+    "slug": "sac-a-dos-nike-21-l-dd0562-323-54",
+    "brand": "Nike",
+    "category": "Sac",
+    "description": "Sac à dos Nike 21 L — DD0562-323 en vert. Sélection authentique Nike.",
+    "status": "active",
+    "featured": true,
+    "variants": [
+      {
+        "sku": "DD0562-323",
+        "size": null,
+        "color": "Vert",
+        "selling_price": 35075,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/nike/dd0562-323.avif",
+        "alt_text": "Sac à dos Nike 21 L — DD0562-323",
+        "position": 0
+      },
+      {
+        "path": "/images/products/nike/dd0562-323-2.avif",
+        "alt_text": "Sac à dos Nike 21 L — DD0562-323",
+        "position": 1
+      },
+      {
+        "path": "/images/products/nike/dd0562-323-3.avif",
+        "alt_text": "Sac à dos Nike 21 L — DD0562-323",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Sac à dos enfant Nike 20 L — BA6032-009",
+    "slug": "sac-a-dos-enfant-nike-20-l-ba6032-009-55",
+    "brand": "Nike",
+    "category": "Sac",
+    "description": "Sac à dos enfant Nike 20 L — BA6032-009 en noir. Sélection authentique Nike.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "BA6032-009",
+        "size": null,
+        "color": "Noir",
+        "selling_price": 30475,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/nike/ba6032-009.avif",
+        "alt_text": "Sac à dos enfant Nike 20 L — BA6032-009",
+        "position": 0
+      },
+      {
+        "path": "/images/products/nike/ba6032-009-2.avif",
+        "alt_text": "Sac à dos enfant Nike 20 L — BA6032-009",
+        "position": 1
+      },
+      {
+        "path": "/images/products/nike/ba6032-009-3.avif",
+        "alt_text": "Sac à dos enfant Nike 20 L — BA6032-009",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Sac enfant Nike Gym Club 25 L — DR6100-634",
+    "slug": "sac-enfant-nike-gym-club-25-l-dr6100-634-56",
+    "brand": "Nike",
+    "category": "Sac",
+    "description": "Sac enfant Nike Gym Club 25 L — DR6100-634 en rose. Sélection authentique Nike.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "DR6100-634",
+        "size": null,
+        "color": "Rose",
+        "selling_price": 30475,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/nike/dr6100-634.avif",
+        "alt_text": "Sac enfant Nike Gym Club 25 L — DR6100-634",
+        "position": 0
+      },
+      {
+        "path": "/images/products/nike/dr6100-634-2.avif",
+        "alt_text": "Sac enfant Nike Gym Club 25 L — DR6100-634",
+        "position": 1
+      },
+      {
+        "path": "/images/products/nike/dr6100-634-3.avif",
+        "alt_text": "Sac enfant Nike Gym Club 25 L — DR6100-634",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Sac de sport Nike Brasilia 41 L — DM3976-010",
+    "slug": "sac-de-sport-nike-brasilia-41-l-dm3976-010-57",
+    "brand": "Nike",
+    "category": "Sac",
+    "description": "Sac de sport Nike Brasilia 41 L — DM3976-010 en noir. Sélection authentique Nike.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "DM3976-010",
+        "size": null,
+        "color": "Noir",
+        "selling_price": 35075,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/nike/dm3976-010.avif",
+        "alt_text": "Sac de sport Nike Brasilia 41 L — DM3976-010",
+        "position": 0
+      },
+      {
+        "path": "/images/products/nike/dm3976-010-2.avif",
+        "alt_text": "Sac de sport Nike Brasilia 41 L — DM3976-010",
+        "position": 1
+      },
+      {
+        "path": "/images/products/nike/dm3976-010-3.avif",
+        "alt_text": "Sac de sport Nike Brasilia 41 L — DM3976-010",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Sac à dos Nike Heritage 25 L — DC4244-364",
+    "slug": "sac-a-dos-nike-heritage-25-l-dc4244-364-58",
+    "brand": "Nike",
+    "category": "Sac",
+    "description": "Sac à dos Nike Heritage 25 L — DC4244-364 en vert. Sélection authentique Nike.",
+    "status": "active",
+    "featured": true,
+    "variants": [
+      {
+        "sku": "DC4244-364",
+        "size": null,
+        "color": "Vert",
+        "selling_price": 31625,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 2,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/nike/dc4244-364.avif",
+        "alt_text": "Sac à dos Nike Heritage 25 L — DC4244-364",
+        "position": 0
+      },
+      {
+        "path": "/images/products/nike/dc4244-364-2.avif",
+        "alt_text": "Sac à dos Nike Heritage 25 L — DC4244-364",
+        "position": 1
+      },
+      {
+        "path": "/images/products/nike/dc4244-364-3.avif",
+        "alt_text": "Sac à dos Nike Heritage 25 L — DC4244-364",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Sac à dos Nike 21 L — DD0559-017",
+    "slug": "sac-a-dos-nike-21-l-dd0559-017-59",
+    "brand": "Nike",
+    "category": "Sac",
+    "description": "Sac à dos Nike 21 L — DD0559-017 en noir. Sélection authentique Nike.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "DD0559-017",
+        "size": null,
+        "color": "Noir",
+        "selling_price": 35075,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/nike/dd0559-017.avif",
+        "alt_text": "Sac à dos Nike 21 L — DD0559-017",
+        "position": 0
+      },
+      {
+        "path": "/images/products/nike/dd0559-017-2.avif",
+        "alt_text": "Sac à dos Nike 21 L — DD0559-017",
+        "position": 1
+      },
+      {
+        "path": "/images/products/nike/dd0559-017-3.avif",
+        "alt_text": "Sac à dos Nike 21 L — DD0559-017",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Sac enfant Nike Gym Club 25 L — DR6100-480",
+    "slug": "sac-enfant-nike-gym-club-25-l-dr6100-480-60",
+    "brand": "Nike",
+    "category": "Sac",
+    "description": "Sac enfant Nike Gym Club 25 L — DR6100-480 en bleu. Sélection authentique Nike.",
+    "status": "active",
+    "featured": false,
+    "variants": [
+      {
+        "sku": "DR6100-480",
+        "size": null,
+        "color": "Bleu",
+        "selling_price": 30475,
+        "compare_at_price": null,
+        "cost_price": null,
+        "stock_on_hand": 1,
+        "stock_reserved": 0,
+        "low_stock_threshold": 2,
+        "is_active": true
+      }
+    ],
+    "images": [
+      {
+        "path": "/images/products/nike/dr6100-480.avif",
+        "alt_text": "Sac enfant Nike Gym Club 25 L — DR6100-480",
+        "position": 0
+      },
+      {
+        "path": "/images/products/nike/dr6100-480-2.avif",
+        "alt_text": "Sac enfant Nike Gym Club 25 L — DR6100-480",
+        "position": 1
+      },
+      {
+        "path": "/images/products/nike/dr6100-480-3.avif",
+        "alt_text": "Sac enfant Nike Gym Club 25 L — DR6100-480",
+        "position": 2
+      }
+    ]
+  }
+]

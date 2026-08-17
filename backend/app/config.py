@@ -34,6 +34,10 @@ class Settings(BaseSettings):
     frontend_origins: str = "http://localhost:4200,http://127.0.0.1:4200"
     points_per_xaf: int = 1000
     access_token_minutes: int = 60 * 24 * 7
+    admin_access_token_minutes: int = 60 * 8
+    upload_dir: str = "./uploads"
+    public_media_base_url: str = "/api/v1/media"
+    max_upload_bytes: int = 5 * 1024 * 1024
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 

@@ -41,7 +41,9 @@ export class AppComponent {
   readonly products = toSignal(this.catalogService.getProducts(), {
     initialValue: PRODUCTS,
   });
-  readonly heroPrice = PRODUCTS.find((item) => item.id === 58)?.price ?? 0;
+  readonly heroPrice = computed(
+    () => this.products().find((item) => item.id === 58)?.price ?? 0,
+  );
 
   // État des filtres. Un signal contient une valeur qui peut changer dans l'interface.
   readonly search = signal("");

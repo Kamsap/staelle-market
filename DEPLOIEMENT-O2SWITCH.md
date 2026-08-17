@@ -63,9 +63,20 @@ JWT_SECRET=secret_long_unique
 ADMIN_API_KEY=cle_admin_longue_unique
 FRONTEND_ORIGINS=https://ton-domaine.com
 POINTS_PER_XAF=1000
+ADMIN_ACCESS_TOKEN_MINUTES=480
+UPLOAD_DIR=/home/compte/staelle-api/uploads
+PUBLIC_MEDIA_BASE_URL=https://api.ton-domaine.com/api/v1/media
 ```
 
-Puis redémarrer l’application Python.
+Avant de redémarrer l’application Python, appliquer la migration :
+
+```bash
+cd ~/staelle-api
+python -m alembic upgrade head
+mkdir -p uploads
+```
+
+Puis redémarrer l’application Python dans cPanel.
 
 ## 3. Déployer le front Angular
 
@@ -106,6 +117,9 @@ Tester ensuite :
 - commande invitée ;
 - commande connectée ;
 - confirmation admin via l’endpoint backend.
+- connexion sur `https://ton-domaine.com/admin` ;
+- modification d’un prix et vérification dans la boutique ;
+- ajout d’une photo et mouvement de stock.
 
 ## Point important
 

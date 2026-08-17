@@ -1,6 +1,6 @@
 # Staelle Market — Angular
 
-Catalogue e-commerce Angular avec recherche, filtres, galeries produit, stock visible, commande WhatsApp et points de retrait Google Maps.
+Boutique e-commerce Angular avec catalogue administrable, galeries produit, commande WhatsApp, comptes clients, fidélité et points de retrait.
 
 ## Lancer le projet
 
@@ -9,51 +9,45 @@ npm install
 npm start
 ```
 
-Ouvrir ensuite [http://localhost:4200](http://localhost:4200).
+Ouvrir ensuite [http://localhost:4200](http://localhost:4200). Le backend doit également être lancé comme indiqué dans `backend/README.md`.
 
-## Guide rapide pour débuter
-
-Les parties importantes sont séparées pour éviter de tout modifier au même endroit :
+## Repères pour débuter
 
 - `src/app/store.config.ts` : numéro WhatsApp, devise et langue ;
-- `src/app/products.ts` : noms, prix, stocks et informations des produits ;
-- `src/app/product-images.ts` : chemins des images produit ;
-- `src/app/pickup-points/pickup-points.ts` : lieux de retrait ;
+- `src/app/products.ts` : catalogue de secours si l’API est indisponible ;
+- `src/app/product-images.ts` : chemins des images historiques ;
+- `src/app/catalog.service.ts` : accès unique au catalogue de l’API ;
+- `src/app/admin/` : interface de gestion accessible à l’adresse `/admin` ;
+- `src/app/pickup-points/` : lieux de retrait ;
 - `src/app/review-form/` : formulaire d’avis ;
-- `src/app/account/` : création de compte, connexion et solde de points ;
-- `backend/` : API FastAPI, base de données et logique de fidélité ;
-- `src/app/app.component.html` : ordre des grandes sections de la page.
+- `src/app/account/` : compte client et points ;
+- `backend/` : API FastAPI, MariaDB, sécurité et logique métier.
 
-Les commentaires expliquent surtout les traitements moins évidents. Les noms des variables et des méthodes décrivent le reste afin de ne pas noyer le code sous des commentaires répétitifs.
+## Catalogue et administration
 
-## Architecture des données
+MariaDB est la source principale des articles, prix, variantes, images et stocks. Les changements effectués dans `/admin` sont visibles dans la boutique sans modifier le code Angular.
 
-- `src/app/products.ts` contient le catalogue de secours utilisé tant que le backend n’est pas activé.
-- `src/app/catalog.service.ts` est l’unique point d’accès au catalogue pour l’interface.
-- `src/app/api.config.ts` configure le futur endpoint FastAPI.
-- `src/app/product-images.ts` centralise les chemins et références des images.
+L’administration permet de :
 
-Pour connecter FastAPI, exposer `GET /api/v1/products`, puis passer `enabled` à `true` dans `src/app/api.config.ts`. Le format attendu est documenté dans `docs/fastapi-integration.md`.
+- ajouter, modifier, publier ou archiver un article ;
+- gérer prix final, prix d’achat, SKU, tailles et couleurs ;
+- ajouter jusqu’à dix photos contrôlées côté serveur ;
+- enregistrer les réceptions, retours, ventes manuelles et corrections de stock ;
+- suivre les indicateurs principaux du catalogue.
+
+Le premier compte administrateur est créé une seule fois avec l’endpoint protégé `POST /api/v1/admin/auth/bootstrap`. La procédure est dans `backend/README.md`.
 
 ## Points de retrait
 
-Les lieux et leurs requêtes Google Maps sont définis dans `src/app/pickup-points/pickup-points.ts` :
+Les lieux sont définis dans `src/app/pickup-points/pickup-points.ts` :
 
-- Accueil de Référence Pressing à Lonkak ;
+- accueil de Référence Pressing à Lonkak ;
 - École publique de Nkolmesseng ;
 - entrée principale de la BEAC à Yaoundé.
 
-Les cartes utilisent l’intégration Google Maps sans clé API et les boutons ouvrent l’itinéraire dans Google Maps.
+## WhatsApp
 
-## Configurer WhatsApp
-
-Dans `src/app/store.config.ts`, remplacer le numéro de démonstration par le numéro réel, au format international sans le `+` :
-
-```ts
-whatsappNumber: "237690000000";
-```
-
-Ce numéro est utilisé pour les commandes et pour l’envoi du formulaire d’avis.
+Le numéro au format international sans `+` se trouve dans `src/app/store.config.ts`. Il est utilisé pour les commandes et les avis.
 
 ## Production
 
@@ -61,6 +55,4 @@ Ce numéro est utilisé pour les commandes et pour l’envoi du formulaire d’a
 npm run build
 ```
 
-La version de production est générée dans `dist/staelle-market/browser`.
-
-Le lancement et la configuration du backend sont expliqués dans `backend/README.md`.
+La version de production est générée dans `dist/staelle-market/browser`. La procédure O2switch se trouve dans `DEPLOIEMENT-O2SWITCH.md`.

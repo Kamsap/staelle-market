@@ -24,8 +24,6 @@ export class OrderService {
       {
         reference,
         product_id: product.id,
-        product_name: product.name,
-        displayed_price: product.price,
       },
       { headers: this.auth.authHeaders() },
     );

@@ -24,6 +24,8 @@ Copy-Item (Join-Path $distBrowser "*") $frontendPackage -Recurse -Force
 Copy-Item (Join-Path $projectRoot "public\.htaccess") (Join-Path $frontendPackage ".htaccess") -Force
 
 Copy-Item (Join-Path $projectRoot "backend\app") $backendPackage -Recurse -Force
+Copy-Item (Join-Path $projectRoot "backend\alembic") $backendPackage -Recurse -Force
+Copy-Item (Join-Path $projectRoot "backend\alembic.ini") $backendPackage -Force
 Copy-Item (Join-Path $projectRoot "backend\requirements.txt") $backendPackage -Force
 Copy-Item (Join-Path $projectRoot "backend\staelle_wsgi.py") $backendPackage -Force
 Copy-Item (Join-Path $projectRoot "backend\.env.example") $backendPackage -Force

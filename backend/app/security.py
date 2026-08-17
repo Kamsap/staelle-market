@@ -21,7 +21,7 @@ def create_access_token(customer_id: int) -> str:
     settings = get_settings()
     expires_at = datetime.now(timezone.utc) + timedelta(minutes=settings.access_token_minutes)
     return jwt.encode(
-        {"sub": str(customer_id), "exp": expires_at},
+        {"sub": str(customer_id), "kind": "customer", "exp": expires_at},
         settings.jwt_secret,
         algorithm="HS256",
     )
@@ -30,6 +30,30 @@ def create_access_token(customer_id: int) -> str:
 def decode_access_token(token: str) -> int | None:
     try:
         payload = jwt.decode(token, get_settings().jwt_secret, algorithms=["HS256"])
+        if payload.get("kind", "customer") != "customer":
+            return None
+        return int(payload["sub"])
+    except (jwt.PyJWTError, KeyError, TypeError, ValueError):
+        return None
+
+
+def create_admin_access_token(admin_id: int, role: str) -> str:
+    settings = get_settings()
+    expires_at = datetime.now(timezone.utc) + timedelta(
+        minutes=settings.admin_access_token_minutes
+    )
+    return jwt.encode(
+        {"sub": str(admin_id), "kind": "admin", "role": role, "exp": expires_at},
+        settings.jwt_secret,
+        algorithm="HS256",
+    )
+
+
+def decode_admin_access_token(token: str) -> int | None:
+    try:
+        payload = jwt.decode(token, get_settings().jwt_secret, algorithms=["HS256"])
+        if payload.get("kind") != "admin":
+            return None
         return int(payload["sub"])
     except (jwt.PyJWTError, KeyError, TypeError, ValueError):
         return None
