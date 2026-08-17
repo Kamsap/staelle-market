@@ -9,7 +9,11 @@ from app import models  # noqa: F401 - enregistre les modèles dans les métadon
 
 
 config = context.config
-config.set_main_option("sqlalchemy.url", get_settings().effective_database_url)
+# ConfigParser interprète les signes "%". Les mots de passe encodés dans une
+# URL SQL peuvent en contenir (par exemple "%40" pour "@"): il faut donc les
+# doubler uniquement lors du passage à Alembic.
+database_url = get_settings().effective_database_url.replace("%", "%%")
+config.set_main_option("sqlalchemy.url", database_url)
 if config.config_file_name:
     fileConfig(config.config_file_name)
 target_metadata = Base.metadata
