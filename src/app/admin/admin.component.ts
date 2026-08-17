@@ -2,7 +2,7 @@ import { CommonModule, DOCUMENT } from "@angular/common";
 import { HttpErrorResponse } from "@angular/common/http";
 import { Component, OnInit, computed, inject, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { firstValueFrom, forkJoin } from "rxjs";
+import { firstValueFrom } from "rxjs";
 import {
   AdminDashboard,
   AdminProduct,
@@ -94,14 +94,24 @@ export class AdminComponent implements OnInit {
   }
 
   refreshData(): void {
-    forkJoin({ dashboard: this.api.dashboard(), products: this.api.products() }).subscribe({
-      next: ({ dashboard, products }) => {
-        this.dashboard.set(dashboard);
-        this.products.set(products);
-      },
+    // Le catalogue doit rester administrable même si un indicateur du tableau
+    // de bord rencontre momentanément un problème côté serveur.
+    this.api.products().subscribe({
+      next: (products) => this.products.set(products),
       error: (error) => {
         if (error instanceof HttpErrorResponse && error.status === 401) this.admin.set(null);
         else this.error.set(this.errorMessage(error));
+      },
+    });
+
+    this.api.dashboard().subscribe({
+      next: (dashboard) => this.dashboard.set(dashboard),
+      error: (error) => {
+        if (error instanceof HttpErrorResponse && error.status === 401) this.admin.set(null);
+        else
+          this.error.set(
+            "Le catalogue reste disponible, mais les indicateurs n’ont pas pu être chargés.",
+          );
       },
     });
   }
