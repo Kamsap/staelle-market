@@ -1,12 +1,316 @@
-<header class="site-header"><a class="brand" href="#top" aria-label="Accueil Staelle Market"><img src="/images/logo.svg" alt=""><span>STAELLE</span></a><nav aria-label="Navigation principale"><a href="#nouveautes">Nouveautés</a><a href="#catalogue">Boutique</a><a href="#services">Services</a></nav><a class="header-action" [href]="whatsappLink()" target="_blank" rel="noopener">WhatsApp <span aria-hidden="true">↗</span></a></header>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Accueil Staelle Market"
+    ><img src="/images/logo.svg" alt="" /><span>STAELLE</span></a
+  >
+  <nav aria-label="Navigation principale">
+    <a href="#nouveautes">Nouveautés</a><a href="#catalogue">Boutique</a
+    ><a href="#compte">Compte</a><a href="#retrait">Retrait</a
+    ><a href="#avis">Donner un avis</a>
+  </nav>
+  <a
+    class="header-action"
+    [href]="whatsappLink()"
+    target="_blank"
+    rel="noopener"
+    >WhatsApp
+    <img class="whatsapp-icon" src="/images/whatsapp.svg" alt="" /></a
+  >
+</header>
 <main id="top">
-  <section class="hero" id="nouveautes"><div class="hero-copy"><p class="eyebrow">Nouvelle sélection · Douala</p><h1>Le style qui<br><em>bouge avec toi.</em></h1><p class="hero-description">Des essentiels sport & lifestyle choisis pour leur allure, leur confort et leur qualité.</p><div class="hero-actions"><a class="button button-dark" href="#catalogue">Découvrir la collection <span>→</span></a><a class="text-link" [href]="whatsappLink()" target="_blank" rel="noopener">Parler à un conseiller</a></div></div><div class="hero-visual" aria-label="Sac Nike de la nouvelle collection"><span class="hero-index">01 / 04</span><span class="hero-word" aria-hidden="true">MOVE</span><img src="/images/product-nike-bag.svg" alt="Sac à dos Nike Sport noir"><div class="hero-product"><span>Nike Sport</span><strong>{{ formatPrice(18000) }}</strong></div></div></section>
-  <section class="service-strip" id="services" aria-label="Nos engagements"><p><span>01</span> Sélection premium</p><p><span>02</span> Stock vérifié</p><p><span>03</span> Commande directe</p><p><span>04</span> Livraison au Cameroun</p></section>
-  <section class="catalogue" id="catalogue">
-    <div class="section-heading"><div><p class="eyebrow dark">La boutique</p><h2>Les essentiels du moment.</h2></div><p>{{ filteredProducts().length }} article{{ filteredProducts().length > 1 ? 's' : '' }} sélectionné{{ filteredProducts().length > 1 ? 's' : '' }}</p></div>
-    <div class="shop-tools"><label class="search-field"><span class="sr-only">Rechercher</span><span aria-hidden="true">⌕</span><input type="search" [ngModel]="search()" (ngModelChange)="search.set($event)" placeholder="Rechercher un article"></label><div class="filters" aria-label="Filtres produits"><label><span class="sr-only">Marque</span><select [ngModel]="brand()" (ngModelChange)="brand.set($event)">@for (item of brands; track item) { <option [value]="item">{{ item === 'Tous' ? 'Toutes les marques' : item }}</option> }</select></label><label><span class="sr-only">Catégorie</span><select [ngModel]="category()" (ngModelChange)="category.set($event)">@for (item of categories; track item) { <option [value]="item">{{ item === 'Tous' ? 'Toutes les catégories' : item }}</option> }</select></label><label><span class="sr-only">Disponibilité</span><select [ngModel]="availability()" (ngModelChange)="availability.set($event)"><option value="Tous">Tout le stock</option><option value="Disponible">Disponible</option></select></label></div></div>
-    <div class="products-grid">@for (product of filteredProducts(); track product.id; let i = $index) {<article class="product-card" [class.sold-out]="product.stock === 0"><div class="product-media"><span class="product-number">0{{ i + 1 }}</span>@if (product.featured) { <span class="badge">Notre choix</span> }<img [src]="product.image" [alt]="product.name"><a class="quick-action" [class.disabled]="product.stock === 0" [href]="product.stock > 0 ? whatsappLink(product) : null" target="_blank" rel="noopener">{{ product.stock > 0 ? 'Commander sur WhatsApp' : 'Bientôt disponible' }}</a></div><div class="product-info"><div><p>{{ product.brand }} · {{ product.category }}</p><h3>{{ product.name }}</h3></div><strong>{{ formatPrice(product.price) }}</strong></div><div class="product-meta"><span class="status" [class.warning]="status(product) === 'Stock limité'" [class.danger]="status(product) === 'Rupture'">{{ status(product) }}</span><span>@if (product.color) { {{ product.color }} } @if (product.size) { · {{ product.size }} }</span></div></article>} @empty {<div class="empty"><strong>Aucun résultat.</strong><span>Essaie une autre recherche ou modifie les filtres.</span></div>}</div>
+  <!-- Présentation principale -->
+  <section class="hero" id="nouveautes">
+    <div class="hero-copy">
+      <p class="eyebrow">Nouvelle sélection · Douala</p>
+      <h1>Le style qui<br /><em>bouge avec toi.</em></h1>
+      <p class="hero-description">
+        Des essentiels sport & lifestyle choisis pour leur allure, leur confort
+        et leur qualité.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#catalogue"
+          >Découvrir la collection <span>→</span></a
+        ><a
+          class="text-link"
+          [href]="whatsappLink()"
+          target="_blank"
+          rel="noopener"
+          >Parler à un conseiller</a
+        >
+      </div>
+    </div>
+    <div class="hero-visual" aria-label="Sac Nike de la nouvelle collection">
+      <span class="hero-word" aria-hidden="true">MOVE</span
+      ><img
+        src="/images/products/nike/dc4244-364.avif"
+        alt="Sac à dos Nike Heritage vert"
+      />
+      <div class="hero-product">
+        <span>Nike Heritage</span><strong>{{ formatPrice(heroPrice()) }}</strong>
+      </div>
+    </div>
   </section>
-  <section class="closing"><p class="eyebrow">Besoin d’aide ?</p><h2>Ton prochain look<br>commence ici.</h2><a class="button button-light" [href]="whatsappLink()" target="_blank" rel="noopener">Écrire sur WhatsApp <span>↗</span></a></section>
+  <!-- Arguments de confiance -->
+  <section class="service-strip" id="services" aria-label="Nos engagements">
+    <p>Sélection premium</p>
+    <p>Stock vérifié</p>
+    <p>Commande directe</p>
+    <p>Livraison au Cameroun</p>
+  </section>
+  <!-- Catalogue, recherche et filtres -->
+  <section class="catalogue" id="catalogue">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark">La boutique</p>
+        <h2>Les essentiels du moment.</h2>
+      </div>
+      <p>
+        {{ filteredProducts().length }} article{{
+          filteredProducts().length > 1 ? "s" : ""
+        }}
+        sélectionné{{ filteredProducts().length > 1 ? "s" : "" }}
+      </p>
+    </div>
+    <div class="shop-tools">
+      <label class="search-field"
+        ><span class="sr-only">Rechercher</span><span aria-hidden="true">⌕</span
+        ><input
+          type="search"
+          [ngModel]="search()"
+          (ngModelChange)="search.set($event)"
+          placeholder="Rechercher un article"
+      /></label>
+      <div class="filters" aria-label="Filtres produits">
+        <label
+          ><select
+            aria-label="Marque"
+            [ngModel]="brand()"
+            (ngModelChange)="brand.set($event)"
+          >
+            @for (item of brands; track item) {
+              <option [value]="item">
+                {{ item === "Tous" ? "Toutes les marques" : item }}
+              </option>
+            }
+          </select></label
+        ><label
+          ><select
+            aria-label="Catégorie"
+            [ngModel]="category()"
+            (ngModelChange)="category.set($event)"
+          >
+            @for (item of categories; track item) {
+              <option [value]="item">
+                {{ item === "Tous" ? "Toutes les catégories" : item }}
+              </option>
+            }
+          </select></label
+        ><label
+          ><select
+            aria-label="Disponibilité"
+            [ngModel]="availability()"
+            (ngModelChange)="availability.set($event)"
+          >
+            <option value="Tous">Tout le stock</option>
+            <option value="Disponible">Disponible</option>
+          </select></label
+        >
+      </div>
+    </div>
+    <div class="products-grid">
+      @for (product of displayedProducts(); track product.id) {
+        <article class="product-card" [class.sold-out]="product.stock === 0">
+          <div class="product-media">
+            @if (product.featured) {
+              <span class="badge">Notre choix</span>
+            }
+            <button
+              class="product-image-button"
+              type="button"
+              (click)="openGallery(product)"
+              [attr.aria-label]="'Voir toutes les photos de ' + product.name"
+            >
+              <img
+                class="product-main-image"
+                [src]="activeImage(product)"
+                [alt]="product.name"
+                loading="lazy"
+                decoding="async"
+              /><span class="view-photos"
+                >Agrandir <span aria-hidden="true">↗</span></span
+              >
+            </button>
+            <div class="gallery-thumbs" aria-label="Vues du produit">
+              @for (
+                view of product.images;
+                track $index;
+                let viewIndex = $index
+              ) {
+                <button
+                  type="button"
+                  [class.active]="activeImage(product) === view"
+                  (click)="selectView(product.id, viewIndex)"
+                  [attr.aria-label]="
+                    'Afficher la vue ' + (viewIndex + 1) + ' de ' + product.name
+                  "
+                >
+                  <img [src]="view" alt="" loading="lazy" />
+                </button>
+              }
+            </div>
+            <button
+              class="quick-action"
+              [class.disabled]="product.stock === 0"
+              [disabled]="product.stock === 0"
+              type="button"
+              (click)="orderProduct(product)"
+            >
+              {{
+                product.stock > 0
+                  ? "Commander sur WhatsApp"
+                  : "Bientôt disponible"
+              }}
+            </button>
+          </div>
+          <div class="product-info">
+            <div>
+              <p>{{ product.brand }} · {{ product.category }}</p>
+              <h3>{{ product.name }}</h3>
+            </div>
+            <strong>{{ formatPrice(product.price) }}</strong>
+          </div>
+          <div class="product-meta">
+            <span
+              class="status"
+              [class.warning]="status(product) === 'Stock limité'"
+              [class.danger]="status(product) === 'Rupture'"
+              >{{ status(product) }}</span
+            ><span>
+              @if (product.color) {
+                {{ product.color }}
+              }
+              @if (product.size) {
+                · {{ product.size }}
+              }
+            </span>
+          </div>
+        </article>
+      } @empty {
+        <div class="empty">
+          <strong>Aucun résultat.</strong
+          ><span>Essaie une autre recherche ou modifie les filtres.</span>
+        </div>
+      }
+    </div>
+    @if (remainingProducts() > 0) {
+      <div class="load-more">
+        <button type="button" (click)="showMore()">
+          Voir 12 articles de plus</button
+        ><span
+          >{{ remainingProducts() }} restant{{
+            remainingProducts() > 1 ? "s" : ""
+          }}</span
+        >
+      </div>
+    }
+  </section>
+  <!-- Les sections complexes sont isolées dans leurs propres composants. -->
+  <app-account />
+  <app-pickup-points />
+  <app-review-form />
+  <section class="closing">
+    <p class="eyebrow">Besoin d’aide ?</p>
+    <h2>Ton prochain look<br />commence ici.</h2>
+    <a
+      class="button button-light"
+      [href]="whatsappLink()"
+      target="_blank"
+      rel="noopener"
+      >Écrire sur WhatsApp
+      <img class="whatsapp-icon" src="/images/whatsapp.svg" alt="" /></a
+    >
+  </section>
 </main>
-<footer><div class="footer-brand">STAELLE</div><div><strong>Sport & lifestyle</strong><span>Douala, Cameroun</span></div><div><strong>Commande simple</strong><span>Disponible sur WhatsApp</span></div><small>© 2026 Staelle Market</small></footer>
+@if (galleryProduct(); as gallery) {
+  <div class="lightbox" (click)="closeGallery()">
+    <section
+      class="lightbox-dialog"
+      role="dialog"
+      aria-modal="true"
+      [attr.aria-label]="'Photos de ' + gallery.name"
+      (click)="$event.stopPropagation()"
+    >
+      <button
+        class="lightbox-close"
+        type="button"
+        (click)="closeGallery()"
+        aria-label="Fermer la galerie"
+      >
+        Fermer <span aria-hidden="true">×</span>
+      </button>
+      <div class="lightbox-stage">
+        <img
+          [src]="galleryImage()"
+          [alt]="gallery.name + ', vue ' + (galleryIndex() + 1)"
+        />
+        @if (gallery.images.length > 1) {
+          <button
+            class="lightbox-arrow previous"
+            type="button"
+            (click)="previousGalleryView()"
+            aria-label="Photo précédente"
+          >
+            ←
+          </button>
+          <button
+            class="lightbox-arrow next"
+            type="button"
+            (click)="nextGalleryView()"
+            aria-label="Photo suivante"
+          >
+            →
+          </button>
+        }
+      </div>
+      <aside class="lightbox-info">
+        <p>{{ gallery.brand }} · {{ gallery.category }}</p>
+        <h2>{{ gallery.name }}</h2>
+        <strong>{{ formatPrice(gallery.price) }}</strong>
+        <span class="lightbox-counter"
+          >Vue {{ galleryIndex() + 1 }} / {{ gallery.images.length }}</span
+        >
+        <div class="lightbox-thumbs" aria-label="Choisir une photo">
+          @for (view of gallery.images; track $index; let viewIndex = $index) {
+            <button
+              type="button"
+              [class.active]="galleryIndex() === viewIndex"
+              (click)="selectGalleryView(viewIndex)"
+              [attr.aria-label]="'Voir la photo ' + (viewIndex + 1)"
+            >
+              <img [src]="view" alt="" />
+            </button>
+          }
+        </div>
+        <button
+          class="button button-dark lightbox-order"
+          [class.disabled]="gallery.stock === 0"
+          [disabled]="gallery.stock === 0"
+          type="button"
+          (click)="orderProduct(gallery); closeGallery()"
+        >
+          {{
+            gallery.stock > 0 ? "Commander sur WhatsApp" : "Bientôt disponible"
+          }}
+          <img class="whatsapp-icon" src="/images/whatsapp.svg" alt="" />
+        </button>
+      </aside>
+    </section>
+  </div>
+}
+<footer>
+  <div class="footer-brand">STAELLE</div>
+  <div><strong>Sport & lifestyle</strong><span>Douala, Cameroun</span></div>
+  <div>
+    <strong>Commande simple</strong><span>Disponible sur WhatsApp</span>
+  </div>
+  <small>© 2026 Staelle Market</small>
+</footer>

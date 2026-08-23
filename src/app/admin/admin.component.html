@@ -1,0 +1,289 @@
+@if (!sessionChecked()) {
+  <main class="session-loading" aria-live="polite">Vérification de la session…</main>
+} @else if (!admin()) {
+  <main class="login-page">
+    <a class="login-brand" href="/" aria-label="Retour à Staelle Market">
+      <img src="/images/logo.svg" alt="" />
+      <span>STAELLE</span>
+    </a>
+    <section class="login-panel">
+      <p class="eyebrow">Espace réservé</p>
+      <h1>Administration</h1>
+      <p>Connecte-toi pour gérer les articles, les prix et les stocks.</p>
+      <form (ngSubmit)="login()">
+        <label>
+          <span>Adresse e-mail</span>
+          <input
+            type="email"
+            autocomplete="username"
+            required
+            [ngModel]="loginEmail()"
+            (ngModelChange)="loginEmail.set($event)"
+            name="email"
+          />
+        </label>
+        <label>
+          <span>Mot de passe</span>
+          <input
+            type="password"
+            autocomplete="current-password"
+            required
+            [ngModel]="loginPassword()"
+            (ngModelChange)="loginPassword.set($event)"
+            name="password"
+          />
+        </label>
+        <button class="primary-action" type="submit" [disabled]="busy()">
+          {{ busy() ? "Connexion…" : "Se connecter" }}
+        </button>
+      </form>
+      @if (error()) {
+        <p class="message error" role="alert">{{ error() }}</p>
+      }
+      <a class="back-link" href="/">← Retour à la boutique</a>
+    </section>
+  </main>
+} @else {
+  <div
+    class="admin-shell"
+    [attr.aria-hidden]="draft() ? 'true' : null"
+    [attr.inert]="draft() ? '' : null"
+  >
+    <aside class="sidebar">
+      <a class="admin-brand" href="/">
+        <img src="/images/logo.svg" alt="" />
+        <span>STAELLE</span>
+      </a>
+      <nav aria-label="Administration">
+        <a class="active" href="/admin#catalogue" (click)="scrollToSection($event, 'catalogue')">Catalogue</a>
+        <a href="/admin#stock-overview" (click)="scrollToSection($event, 'stock-overview')">Stock</a>
+        <span class="future">Commandes · bientôt</span>
+        <span class="future">Clients · bientôt</span>
+      </nav>
+      <div class="sidebar-account">
+        <small>Connecté comme</small>
+        <strong>{{ admin()!.full_name }}</strong>
+        <button type="button" (click)="logout()">Se déconnecter</button>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="workspace-header">
+        <div>
+          <p class="eyebrow">Vue d’ensemble</p>
+          <h1>Catalogue & stock</h1>
+        </div>
+        <button class="primary-action" type="button" (click)="newProduct()">
+          Ajouter un article <span aria-hidden="true">＋</span>
+        </button>
+      </header>
+
+      @if (dashboard(); as stats) {
+        <section class="metrics" id="stock-overview" aria-label="Indicateurs du catalogue">
+          <div><span>Articles actifs</span><strong>{{ stats.active_products }}</strong></div>
+          <div><span>Unités disponibles</span><strong>{{ stats.total_available_stock }}</strong></div>
+          <div [class.alert]="stats.low_stock_variants > 0">
+            <span>Stocks faibles</span><strong>{{ stats.low_stock_variants }}</strong>
+          </div>
+          <div><span>Commandes en attente</span><strong>{{ stats.pending_orders }}</strong></div>
+          <div><span>CA confirmé</span><strong>{{ formatPrice(stats.confirmed_revenue) }}</strong></div>
+        </section>
+      }
+
+      @if (feedback()) {
+        <p class="message success" aria-live="polite">{{ feedback() }}</p>
+      }
+      @if (error() && !draft()) {
+        <p class="message error" role="alert">{{ error() }}</p>
+      }
+
+      <section class="catalogue-panel" id="catalogue">
+        <div class="panel-heading">
+          <div>
+            <h2>Articles</h2>
+            <p>{{ products().length }} références enregistrées</p>
+          </div>
+          <label class="search-field">
+            <span class="sr-only">Rechercher un article</span>
+            <input
+              type="search"
+              placeholder="Nom, marque ou SKU"
+              [ngModel]="search()"
+              (ngModelChange)="search.set($event)"
+            />
+          </label>
+        </div>
+
+        <div class="product-table" aria-label="Liste des articles">
+          <div class="table-row table-head" aria-hidden="true">
+            <span>Article</span><span>Prix</span><span>Stock</span><span>État</span><span></span>
+          </div>
+          @for (product of filteredProducts(); track product.id) {
+            <button
+              class="table-row product-row"
+              type="button"
+              (click)="editProduct(product)"
+              [attr.aria-label]="'Modifier l’article ' + product.name"
+            >
+              <span class="product-cell">
+                <img [src]="mainImage(product)" [alt]="product.name" />
+                <span><strong>{{ product.name }}</strong><small>{{ product.brand }} · {{ product.variants[0].sku }}</small></span>
+              </span>
+              <strong>{{ formatPrice(minimumPrice(product)) }}</strong>
+              <span class="stock-value" [class.low]="totalStock(product) <= product.variants[0].low_stock_threshold">
+                {{ totalStock(product) }} unité{{ totalStock(product) > 1 ? "s" : "" }}
+              </span>
+              <span class="status" [class.draft]="product.status === 'draft'" [class.archived]="product.status === 'archived'">
+                {{ product.status === "active" ? "En ligne" : product.status === "draft" ? "Brouillon" : "Archivé" }}
+              </span>
+              <span class="row-action">Modifier <span aria-hidden="true">→</span></span>
+            </button>
+          } @empty {
+            <div class="empty-state">
+              <strong>Aucun article trouvé.</strong>
+              <span>Modifie la recherche ou ajoute une nouvelle référence.</span>
+            </div>
+          }
+        </div>
+      </section>
+    </main>
+  </div>
+
+  @if (draft(); as item) {
+    <div class="drawer-backdrop" (click)="requestCloseEditor()"></div>
+    <aside
+      class="editor"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="product-editor-title"
+    >
+      <header>
+        <div>
+          <p class="eyebrow">{{ item.id ? "Modifier" : "Nouvel article" }}</p>
+          <h2 id="product-editor-title" tabindex="-1">{{ item.name || "Article sans nom" }}</h2>
+        </div>
+        <button
+          class="close-button"
+          type="button"
+          (click)="requestCloseEditor()"
+          aria-label="Fermer l’éditeur"
+        >×</button>
+      </header>
+
+      <form (ngSubmit)="saveProduct(item)">
+        <section class="form-section">
+          <div class="section-title"><h3>Informations</h3></div>
+          <label class="wide">
+            <span>Nom de l’article</span>
+            <input [ngModel]="item.name" (ngModelChange)="setName(item, $event)" name="name" required />
+          </label>
+          <label class="wide">
+            <span>Adresse interne</span>
+            <input [(ngModel)]="item.slug" name="slug" required />
+          </label>
+          <div class="field-grid">
+            <label><span>Marque</span><input [(ngModel)]="item.brand" name="brand" required /></label>
+            <label>
+              <span>Catégorie</span>
+              <select [(ngModel)]="item.category" name="category">
+                <option>Sac</option><option>Chaussure</option><option>Vêtement</option><option>Accessoire</option><option>Autre</option>
+              </select>
+            </label>
+            <label>
+              <span>Publication</span>
+              <select [(ngModel)]="item.status" name="status">
+                <option value="draft">Brouillon</option><option value="active">En ligne</option><option value="archived">Archivé</option>
+              </select>
+            </label>
+            <label class="check-label">
+              <input type="checkbox" [(ngModel)]="item.featured" name="featured" />
+              <span>Mettre en avant</span>
+            </label>
+          </div>
+          <label class="wide">
+            <span>Description</span>
+            <textarea [(ngModel)]="item.description" name="description" rows="4" required></textarea>
+          </label>
+        </section>
+
+        <section class="form-section" id="product-stock">
+          <div class="section-title"><h3>Prix & variantes</h3></div>
+          @for (variant of item.variants; track $index; let i = $index) {
+            <div class="variant-block">
+              <div class="variant-heading">
+                <strong>Variante {{ i + 1 }}</strong>
+                @if (item.variants.length > 1) {
+                  <button type="button" (click)="removeVariant(item, i)">Retirer</button>
+                }
+              </div>
+              <div class="field-grid three">
+                <label><span>SKU / Référence</span><input [(ngModel)]="variant.sku" [name]="'sku-' + i" required /></label>
+                <label><span>Taille</span><input [(ngModel)]="variant.size" [name]="'size-' + i" /></label>
+                <label><span>Couleur</span><input [(ngModel)]="variant.color" [name]="'color-' + i" /></label>
+                <label><span>Prix de vente</span><input type="number" min="1" [(ngModel)]="variant.selling_price" [name]="'price-' + i" required /></label>
+                <label><span>Prix d’achat</span><input type="number" min="0" [(ngModel)]="variant.cost_price" [name]="'cost-' + i" /></label>
+                <label><span>Seuil d’alerte</span><input type="number" min="0" [(ngModel)]="variant.low_stock_threshold" [name]="'threshold-' + i" /></label>
+              </div>
+              @if (!variant.id) {
+                <label><span>Stock initial</span><input type="number" min="0" [(ngModel)]="variant.stock_on_hand" [name]="'stock-' + i" /></label>
+              } @else {
+                <div class="stock-summary">
+                  <span>Stock physique <strong>{{ variant.stock_on_hand }}</strong></span>
+                  <span>Réservé <strong>{{ variant.stock_reserved }}</strong></span>
+                  <span>Disponible <strong>{{ variant.available_stock }}</strong></span>
+                </div>
+                <div class="stock-adjustment">
+                  <label><span>Variation</span><input type="number" [ngModel]="stockDelta()" (ngModelChange)="stockDelta.set($event)" [name]="'delta-' + i" /></label>
+                  <label>
+                    <span>Motif</span>
+                    <select [ngModel]="stockKind()" (ngModelChange)="stockKind.set($event)" [name]="'kind-' + i">
+                      <option value="receipt">Réception</option><option value="return">Retour</option><option value="correction">Correction</option><option value="damaged">Endommagé</option><option value="sale">Vente manuelle</option>
+                    </select>
+                  </label>
+                  <label class="wide"><span>Note</span><input [ngModel]="stockNote()" (ngModelChange)="stockNote.set($event)" [name]="'note-' + i" /></label>
+                  <button class="secondary-action" type="button" (click)="adjustStock(item, variant)" [disabled]="busy()">
+                    Enregistrer le mouvement
+                  </button>
+                </div>
+              }
+            </div>
+          }
+          <button class="text-action" type="button" (click)="addVariant(item)">＋ Ajouter une variante</button>
+        </section>
+
+        <section class="form-section">
+          <div class="section-title"><h3>Photos</h3></div>
+          <div class="image-list">
+            @for (image of item.images; track $index; let i = $index) {
+              <figure>
+                <img [src]="image.path" [alt]="image.alt_text" />
+                <button type="button" (click)="removeImage(item, i)" aria-label="Supprimer cette photo">×</button>
+              </figure>
+            }
+            <label class="upload-box">
+              <input type="file" accept="image/jpeg,image/png,image/webp" multiple (change)="uploadImages(item, $event)" />
+              <span>{{ uploading() ? "Envoi…" : "＋ Ajouter des photos" }}</span>
+              <small>JPG, PNG ou WebP · 5 Mo max</small>
+            </label>
+          </div>
+        </section>
+
+        @if (error()) {
+          <p class="message error" role="alert">{{ error() }}</p>
+        }
+        @if (feedback()) {
+          <p class="message success" role="status">{{ feedback() }}</p>
+        }
+
+        <footer class="editor-actions">
+          @if (item.id) {
+            <button class="danger-action" type="button" (click)="archiveProduct(item)">Archiver</button>
+          }
+          <button class="primary-action" type="submit" [disabled]="busy() || uploading()">
+            {{ busy() ? "Enregistrement…" : "Enregistrer l’article" }}
+          </button>
+        </footer>
+      </form>
+    </aside>
+  }
+}

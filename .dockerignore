@@ -1,0 +1,12 @@
+.git
+.angular
+dist
+node_modules
+npm-debug.log
+backend
+docs
+secrets
+*.log
+.env
+.env.*
+!.env.docker.example
